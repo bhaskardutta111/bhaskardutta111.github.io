@@ -513,13 +513,12 @@ body a{
 	line-height: 52px;
 	margin: 0 auto;
 	width: 50%;
-	border: 1px solid red;
 	text-align: center;
 
 } 
 
 .map-contactForm{
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 
 }
 
@@ -530,7 +529,8 @@ body a{
 .contact-label p{
 	font-size: 25px;
 	line-height: 27px;
-	margin-top: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	text-align: center;
 }
 
@@ -538,7 +538,7 @@ body a{
 	float: left;
 	width: 50%;
 	margin-top: 6px;
-	padding: 20px;
+/*	padding: 20px;*/
   }
 
   .map-frame{
@@ -553,9 +553,14 @@ body a{
   }
   
 
+.contactForm{
+	border: 1px solid red;
+
+}
+
 /* Style inputs */
 input[type=text], select, textarea {
-	width: 100%;
+	width: 50%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	margin-top: 6px;
@@ -590,14 +595,11 @@ input[type=text], select, textarea {
 /***footer***/
 
 .footer{
-	border: 1px solid red;
 	width: 100%;
 	background-color: #58B19F;
 	color: #fff;
 
 }
-
-
 
 .footer a{
 	color: #e74c3c;
@@ -607,38 +609,32 @@ input[type=text], select, textarea {
 
 .footer a:hover{
 	font-weight: 800;
-	
 }
+
 
 .copyright-developer{
 	display: inline-block;
 	width: 100%;
-	border: 1px solid red;
 	color: #fff;	
-	font-size: 25px;
-	line-height: 27px;
-
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 600;
 }
 .copyright{
 	display: inline-block;	
 	margin: 10px;
 	margin-top: 15px;
-	border: 1px solid red;
-/*	position: relative;
-	left: 550px;
-*/
+	transform: translateX(150%);
 }
 
 .copyright p{
 	float: left;
 	text-align: center;
-
 }
 
 .developer{
 	float: right;
-	margin: 10px;	
-border: 1px solid red;
+	transform: translate(-10%,60%);
 
 }
 
