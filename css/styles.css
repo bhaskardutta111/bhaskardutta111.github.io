@@ -101,12 +101,12 @@ body a{
 }
 
 .fab {
-	padding: 10px;
+	padding: 5px;
 	font-size: 30px;
-	width: 10px;
+	width: 15px;
 	text-align: center;
 	text-decoration: none;
-	margin-right: 10px;
+	margin-right: 25px;
 	border-radius: 50%;
 	color: white;
 }
@@ -117,6 +117,7 @@ body a{
 }
 
 /***header***/
+
 .header{
 	width: 50%;
 	margin: 0 auto;
@@ -133,7 +134,8 @@ body a{
 
 .header h3{
 	font-size: 25px;
-	line-height: 2;
+	line-height: 3;
+	margin: 10px;
 
 }
 
@@ -143,7 +145,7 @@ body a{
 	border-bottom: 2px solid #58B19F;
 	background-color: #58B19F;
 	margin-bottom: 5px;
-	height: 70px;
+	height: 72px;
 	
 }
 
@@ -155,7 +157,7 @@ body a{
 }
 
 .options{
-	width: 60%;
+	width: 90%;
 	margin: 0 auto;
 	font-size: 22px;
 	font-weight: 700;
@@ -167,22 +169,18 @@ body a{
 .options a{
 	color: #fff;
 	margin: 10px;
-	margin-left: 20px;
-
+	margin-left: 40px;
+padding: 21px;
 }
 
 .options a:hover{
-	background-color: aqua;
-	color: #125688;
-	opacity: 0.7;
-
+	background-color: #2C3A47;
 }
 
 /***slideshow***/
 
 .slideshow{
 	border-top: 2px solid #2C3A47;
-/*	margin-bottom: 30px;*/
 }
 
 .slides{
@@ -191,7 +189,6 @@ body a{
 	width: 71.5%; /*1075px*/
 	height: 550px;
 	margin: 0 auto;
-	/*position: relative;*/
 }
 
 .slide{
@@ -237,14 +234,14 @@ body a{
 }
 
 /***about***/
+
 .about{
-	border-top: 2px solid #58B19F;
+	border-bottom: 2px solid #58B19F;
 	text-align: center;	
 }
 
 .title-details{
 	margin: 0 auto;
-	/*	width: 50%;*/
 	margin-top: 20px;
 	
 }
@@ -253,8 +250,9 @@ body a{
 	font-size: 50px;
 	font-weight: 500;
 	line-height: 52px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px;
 }
 
 .details{
@@ -265,12 +263,13 @@ body a{
 
 }
 
-.details .para2{
-	margin: 20px;
-	
+.para2, .para1{
+	margin: 30px;
+	padding: 20px;
 }
 
 /***teachers***/
+
 .teachers{
 	border-top: 2px solid #58B19F;
 	text-align: center;	
@@ -289,33 +288,25 @@ body a{
 	line-height: 52px;
 	margin: 0 auto;
 	width: 50%;
-	/*border: 1px solid red;*/
 	text-align: center;
 }
 .teacher-label h1{
 	margin: 20px;	
 }
 
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .info {
-/*	border: 1px solid yellow;*/
 	width: 100%;
 	margin-top: 35px;
 	margin-bottom: 20px;
   }
 
 .info-cards{
-/*	border: 1px solid #f1f1f1;
-	background-color: transparent;
-	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	display: flex;  
     flex-wrap: wrap;
-			justify-content: space-between;
+	justify-content: space-between;
 	margin: 30px;
 }
 
-  /* This container is needed to position the front and back side */
   .info-card-inner {
 	border: 5px solid #f1f1f1;
 	border-radius: 5px;
@@ -329,9 +320,6 @@ body a{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  
-  /* Position the front and back side */
   .info-card-front, .info-card-back {
 	position: absolute;
 	width: 100%;
@@ -339,7 +327,6 @@ body a{
 	backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
   .info-card-front {
 	background-color: #bbb;
 	color: black;
@@ -350,12 +337,10 @@ body a{
 	height: 310px
 }
 
-  /* Style the back side */
 .info-card-back {
-	background-color: dodgerblue;
-	color: white;
+	background-color: #0AFADF;
+	color: #2C3A47;
 	transform: rotateY(180deg);
-/*	display: none;*/
 }
 
 .info-card-inner:hover {
@@ -393,7 +378,6 @@ body a{
 	line-height: 52px;
 	margin: 0 auto;
 	width: 50%;
-	/*border: 1px solid red;*/
 	text-align: center;
 
 }
@@ -410,7 +394,6 @@ body a{
 
 }
 
-/* Style tab links */
 .months {
 	background-color: #2C3A47;
 	color: white;
@@ -433,9 +416,7 @@ body a{
 	background-color: #58B19F;
   }
 
-  /* Style the tab content (and add height:100% for full page content) */
 .event-name {
-	/*border: 1px solid red;*/
 	color: white;
 	padding: 50px 20px;
 	height: 100%;
@@ -456,7 +437,7 @@ body a{
 /***notice board***/
 
 .notice{
-	border: 1px solid red;
+	border-bottom: 2px solid #0AFADF;
 	height: 200px;
 }
 
@@ -466,7 +447,6 @@ body a{
 	line-height: 52px;
 	margin: 0 auto;
 	width: 50%;
-	/*border: 1px solid red;*/
 	text-align: center;
 
 }
@@ -489,7 +469,6 @@ body a{
 	line-height: 52px;
 	margin: 0 auto;
 	width: 50%;
-	/*border: 1px solid red;*/
 	text-align: center;
 
 }
@@ -502,7 +481,6 @@ body a{
 /***contact***/
 
 .contact{
-	border: 1px solid red;	
 	padding: 10px;
  	
 }
@@ -517,35 +495,27 @@ body a{
 
 } 
 
-.map-contactForm{
-/*	border: 1px solid red;*/
-
-}
-
 .contact-label h1{
-	margin: 20px;
+	margin: 35px;
 }
 
 .contact-label p{
 	font-size: 25px;
 	line-height: 27px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin: 35px;
 	text-align: center;
+	padding: 10px;
 }
 
-.column {
-	float: left;
-	width: 50%;
-	margin-top: 6px;
-/*	padding: 20px;*/
-  }
-
   .map-frame{
-	  border: 3px solid ;
+	  border: 5px solid;
+	  float: left;
+	  border-radius: 5px;
+	  width: 614px;
+	  height: 563px;
+	  margin: 20px;
   }
   
-  /* Clear floats after the columns */
   .row:after {
 	content: "";
 	display: table;
@@ -554,33 +524,56 @@ body a{
   
 
 .contactForm{
-	border: 1px solid red;
-
+	width: 50%;
+	padding: 10px;
+	float: left;
+	margin-top: 30px;
 }
 
-/* Style inputs */
-input[type=text], select, textarea {
-	width: 50%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-  }
-  
-  input[type=submit] {
-	background-color: #4CAF50;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-	background-color: #45a049;
-  }
-  
-  
+form { 
+	width: 600px;
+	margin:50px auto;
+}
+
+.fname-input, .lname-input, .msg-input {
+  color: #58B19F;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #2C3A47;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s;
+  padding: 20px;
+  margin-bottom: 30px;
+  width:100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.submit{
+  width: 40%;
+  background-color: #2C3A47;
+  border-radius: 10px;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top: 50px;
+  font-weight:100;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+
+}
+.submit:hover { background:#58B19F; }
+
+
   /* Create two columns that float next to eachother */
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other 
@@ -595,12 +588,11 @@ input[type=text], select, textarea {
 /***footer***/
 
 .footer{
-	width: 100%;
+	border: 1px solid red;
 	background-color: #58B19F;
-	color: #fff;
-
+	width: 100%;
+	height: 500px;
 }
-
 .footer a{
 	color: #e74c3c;
 	text-decoration: none;
@@ -618,7 +610,7 @@ input[type=text], select, textarea {
 	color: #fff;	
 	font-size: 20px;
 	line-height: 22px;
-	font-weight: 600;
+	font-weight: 400;
 }
 .copyright{
 	display: inline-block;	
@@ -630,14 +622,18 @@ input[type=text], select, textarea {
 .copyright p{
 	float: left;
 	text-align: center;
+	transform: translateX(70%);
+
 }
 
 .developer{
 	float: right;
 	transform: translate(-10%,60%);
-
 }
 
+.developer a:hover{
+color: #fff;
+}
 
 
 /*SCREEN SIZE  1536 x 864 px*/		
