@@ -7,7 +7,9 @@
     <title>S.H.S. sampleSite</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|PT+Sans|Raleway|Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/smDevices.css">
+    <link rel="stylesheet" href="./css/lgDevices.css">
 
 </head>
 <body>
@@ -17,7 +19,11 @@
         <div class="infobar-top">
             <div class="phone-social">
                 <div class="phone">
-                    <i class="fas fa-phone"></i> <p>03712 123456</p>
+                    <i class="fas fa-phone"></i>
+                    <p>03712 123456</p>
+                    <button class="menu tap-target" onclick="showMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
                 <div class="social">
                     <a href="#"> <i class="fab fa-facebook"> </i> </a>
@@ -37,15 +43,18 @@
             </div>
         </div>
 
-        <div class="navbar sticky">
+        <div class="navbar sticky" id="nav">
+                <a href="javascript:void(0)" 
+                class="exitBtn tap-target" onclick="closeMenu()">&times;
+            </a>
             <div class="options">
                     <a href="#about">About</a>
                     <a href="#teachers">Teachers</a>
                     <a href="#events">Events</a>
                     <a href="#notice-board">Notice Board</a>
-                    <a href="#news">Members</a>
-                    <a href="#contact">Records</a>
-                    <a href="#home">Contact</a>    
+                    <a href="#resource">Resource</a>
+                    <a href="#records">Records</a>
+                    <a href="#contact">Contact</a> 
             </div>
         </div>
 
@@ -152,7 +161,7 @@
                                         </div>
                                 </div>
 
-                                <div class="info-card-three info-card-inner">
+                                <div class="info-card-four info-card-inner">
                                     <div class="info-card-front">
                                         <img src="./images/teacher-pic4.jpg" alt="Avatar" style="width:300px;height:300px;">
                                     </div>
@@ -164,7 +173,7 @@
                                 </div>
                                 </div>
 
-                                <div class="info-card-inner info-card-three">
+                                <div class="info-card-five info-card-inner">
                                     <div class="info-card-front">
                                         <img src="./images/teacher-pic5.jpg" alt="Avatar" style="width:300px;height:300px;">
                                     </div>
@@ -176,7 +185,7 @@
                                     </div>
                                 </div>
 
-                                <div class="info-card-inner info-card-three">
+                                <div class="info-card-six info-card-inner">
                                         <div class="info-card-front">
                                             <img src="./images/teacher-pic6.jpg" alt="Avatar" style="width:300px;height:300px;">
                                         </div>
@@ -188,29 +197,101 @@
                                         </div>
                                 </div>
 
-                                    <div class="info-card-inner info-card-three">
-                                            <div class="info-card-front">
-                                                <img src="./images/teacher-pic7.jpg" alt="Avatar" style="width:300px;height:300px;">
-                                            </div>
-                                            <div class="info-card-back">
-                                                <h1>John Doe</h1>
-                                                <p>Science Teacher since 2005</p>
-                                                <p>Graduated from Darrang College</p>
-                                                <p>Masters from Tezpur University </p>
-                                            </div>
+                                <div class="info-card-seven info-card-inner">
+                                        <div class="info-card-front">
+                                            <img src="./images/teacher-pic7.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="info-card-back">
+                                            <h1>John Doe</h1>
+                                            <p>Science Teacher since 2005</p>
+                                            <p>Graduated from Darrang College</p>
+                                            <p>Masters from Tezpur University </p>
+                                        </div>
+                                </div>
+
+                                <div class="info-card-eight info-card-inner">
+                                        <div class="info-card-front">
+                                            <img src="./images/teacher-pic8.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="info-card-back">
+                                            <h1>John Doe</h1>
+                                            <p>English Teacher since 2001</p>
+                                            <p>Graduated from Tezpur College</p>
+                                            <p>Masters from Tezpur University</p>
+                                        </div>
+                                </div>
+
+                                    <div class="card">
+                                        <img src="./images/teacher-pic1.jpg"
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>Mathematics Teacher since 2000</p>
+                                        <p>Graduated from Darrang College</p>
+                                        <p>Masters from Tezpur University</p>  
+                                    </div> 
+                                    
+                                    <div class="card">
+                                        <img src="./images/teacher-pic2.jpg" alt="John" 
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>Mathematics Teacher since 2000</p>
+                                        <p>Graduated from Darrang College</p>
+                                        <p>Masters from Tezpur University</p> 
                                     </div>
 
-                                    <div class="info-card-inner info-card-three">
-                                            <div class="info-card-front">
-                                                <img src="./images/teacher-pic8.jpg" alt="Avatar" style="width:300px;height:300px;">
-                                            </div>
-                                            <div class="info-card-back">
-                                                <h1>John Doe</h1>
-                                                <p>English Teacher since 2001</p>
-                                                <p>Graduated from Tezpur College</p>
-                                                <p>Masters from Tezpur University</p>
-                                            </div>
+                                    <div class="card">
+                                        <img src="./images/teacher-pic3.jpg" alt="John" 
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                            <p>Science Teacher since 2000</p>
+                                            <p>Graduated from Darrang College</p>
+                                            <p>Masters from Tezpur University</p>  
                                     </div>
+  
+                                    <div class="card">
+                                        <img src="./images/teacher-pic4.jpg"
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>English Teacher since 2000</p>
+                                        <p>Graduated from Darrang College</p>
+                                        <p>Masters from Darrang College</p>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="./images/teacher-pic5.jpg"
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>Social Science Teacher since 2000</p>
+                                        <p>Graduated from Darrang College</p>
+                                        <p>Masters from Darrang College</p>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="./images/teacher-pic6.jpg"
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>Computer Science Teacher since 2000</p>
+                                        <p>Diploma from Nowgong Polytechnic</p>
+                                        <p>B.Tech from Tezpur University</p>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="./images/teacher-pic7.jpg"
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>Science Teacher since 2005</p>
+                                        <p>Graduated from Darrang College</p>
+                                        <p>Masters from Tezpur University </p>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="./images/teacher-pic8.jpg"
+                                        style="width:100%">
+                                        <h1>John Doe</h1>
+                                        <p>English Teacher since 2001</p>
+                                        <p>Graduated from Tezpur College</p>
+                                        <p>Masters from Tezpur University</p>
+                                    </div> 
                         </div>
                     </div>        
             </div>
@@ -221,19 +302,19 @@
                         <h1>Events in the year 2020 </h1>
                 </div>
 
-                <div class="event-months">
-                    <button class="months" id="defaultOpen" onclick="openEvent('Jan', this, '#58B19F')">Jan</button>
-                    <button class="months" onclick="openEvent('Feb', this, '#58B19F')"> Feb</a>
-                    <button class="months" onclick="openEvent('March', this, '#58B19F')"> March</a>
-                    <button class="months" onclick="openEvent('April', this, '#58B19F')"> April</a>
-                    <button class="months" onclick="openEvent('May', this, '#58B19F')"> May</a>
-                    <button class="months" onclick="openEvent('June', this, '#58B19F')"> June</a>
-                    <button class="months" onclick="openEvent('July', this, '#58B19F')"> July</a>
-                    <button class="months" onclick="openEvent('Aug', this, '#58B19F')"> Aug</a>
-                    <button class="months" onclick="openEvent('Sep', this, '#58B19F')"> Sep</a>
-                    <button class="months" onclick="openEvent('Oct', this, '#58B19F')"> Oct</a>
-                    <button class="months" onclick="openEvent('Nov', this, '#58B19F')"> Nov</a>
-                    <button class="months" onclick="openEvent('Dec', this, '#58B19F')"> Dec</a>
+                <div class="event-months" id="em">
+                    <button class="months tap-target" id="defaultOpen" onclick="openEvent('Jan', this, '#58B19F')">Jan</button>
+                    <button class="months tap-target" onclick="openEvent('Feb', this, '#58B19F')"> Feb</button>
+                    <button class="months tap-target" onclick="openEvent('March', this, '#58B19F')"> March</button>
+                    <button class="months tap-target" onclick="openEvent('April', this, '#58B19F')"> April</button>
+                    <button class="months tap-target" onclick="openEvent('May', this, '#58B19F')"> May</button>
+                    <button class="months tap-target" onclick="openEvent('June', this, '#58B19F')"> June</button>
+                    <button class="months tap-target" onclick="openEvent('July', this, '#58B19F')"> July</button>
+                    <button class="months tap-target" onclick="openEvent('Aug', this, '#58B19F')"> Aug</button>
+                    <button class="months tap-target" onclick="openEvent('Sep', this, '#58B19F')"> Sep</button>
+                    <button class="months tap-target" onclick="openEvent('Oct', this, '#58B19F')"> Oct</button>
+                    <button class="months tap-target" onclick="openEvent('Nov', this, '#58B19F')"> Nov</button>
+                    <button class="months tap-target" onclick="openEvent('Dec', this, '#58B19F')"> Dec</button>
                 </div>
             <div class="event">
                     <div id="Jan" class="event-name">
@@ -282,7 +363,7 @@
                                 <h3>5th August</h3>
                                 <p>Science Exhibition</p>
                             </div>
-        
+                            
                             <div id="Sep" class="event-name">
                                     <h3>5th September</h3>
                                     <p>Teacher's Day Celebration</p>
@@ -325,14 +406,14 @@
                 <div class="row">
                     <div class="column map-frame">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.2178039998325!2d92.78933091499201!3d26.64150798324507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3744e9c5bd720c37%3A0xf58083b57233a77e!2sSacred%20Heart%20School!5e0!3m2!1sen!2sin!4v1575823580741!5m2!1sen!2sin"
-                        width="605" height="555" frameborder="0" style="border:0;" allowfullscreen="">
+                        frameborder="0" style="border:0;" allowfullscreen="">
                         </iframe>
                     </div>
                     <div class="column contactForm">
                             <form action="">       
                                 <input type="text" class="fname-input"
                                 placeholder="Name" />   
-                                <input type="text" class="lname-input"
+                                <input type="email" class="lname-input"
                                 placeholder="Email" />
                                 <textarea name="text" class="msg-input"
                                 placeholder="Your Message"></textarea>
