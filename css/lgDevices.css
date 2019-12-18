@@ -1,5 +1,6 @@
-@media only screen and (min-width: 768px) and (max-width: 1200px){
-	/* http://meyerweb.com/eric/tools/css/reset/ 
+/*tablet screens-between-601px and 1200px*/
+@media only screen and (min-width: 601px) and (max-width: 1200px){
+/* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
 License: none (public domain)
 */
@@ -162,6 +163,14 @@ body a{
 	position: relative;
 	display: inline-block;
 }
+
+.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
 
 .exitBtn{
 	display: none;
