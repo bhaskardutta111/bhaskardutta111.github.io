@@ -1,4 +1,4 @@
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices-1200px and up*/
 @media only screen and (min-width: 1200px) {
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
@@ -167,7 +167,7 @@ body a{
 	margin: 0 auto;
 	font-size: 22px;
 	font-weight: 700;
-	padding: 5px;
+	padding: 20px;
 	overflow: hidden;
 }
 
