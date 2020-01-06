@@ -44,6 +44,13 @@ document.getElementById("defaultOpen").click();
   
 //////////////////////////
 
+function showMenu() {
+    document.getElementById("nav").style.width = "100%";
+  }
+  
+  function closeMenu() {
+    document.getElementById("nav").style.width = "0%";
+  }
 
 
 
