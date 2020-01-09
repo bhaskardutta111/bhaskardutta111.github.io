@@ -1,3 +1,6 @@
+
+new WOW().init();
+
 //function for automatic slideshow
 var slideInd = 0;
 
