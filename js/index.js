@@ -22,7 +22,7 @@ function autoSlideShow() {
     }
     dots[slideInd-1].className = dots[slideInd-1].className +  " slideOn";
 
-    setTimeout(autoSlideShow, 3000); // Change image every 2 seconds
+    setTimeout(autoSlideShow, 3000); // Change image every 3 seconds
 }
 
 //////////////////////
@@ -45,7 +45,7 @@ var eventName = document.getElementsByClassName("event-name");
   
 document.getElementById("defaultOpen").click();
   
-//////////////////////////
+//////////////////////////  
 
 function showMenu() {
     document.getElementById("nav").style.width = "100%";
@@ -54,10 +54,40 @@ function showMenu() {
   function closeMenu() {
     document.getElementById("nav").style.width = "0%";
   }
+////////////////////////
 
+var mybutton = document.querySelector(".btn-scroll-top");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//change background of navbar on scroll
+var navbar = document.querySelector('.navbar');
+
+window.onscroll = function(){
+    // console.log(window.scrollY);
+    if(window.scrollY > 277){
+        navbar.classList.add("sticky");
+    }
+    else{
+        navbar.classList.remove("sticky");
+
+    }
+};
 
 
 autoSlideShow();
-
-
