@@ -1,6 +1,5 @@
 /**********SERVICE SEC**********/
 .services-section{
-    border: 1px solid red;
     padding: 10px 0;
 }
 .service-label{
@@ -15,7 +14,7 @@
     margin: 30px 0;
     padding: 30px;
     flex-basis: 30%;
-    box-shadow: 0 10px 10px 0 #000;
+    box-shadow: 0 10px 10px 0 #a64ac9;
 }
 .service-blocks, .service-header{
 	display: flex;

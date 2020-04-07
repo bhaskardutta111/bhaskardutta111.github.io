@@ -1,10 +1,9 @@
 /**********CONTACT SEC**********/
 .contact-form-section{
-    border: 1px solid red;
     padding: 10px 0;
 }
 .contact-header{
-	margin: 20px 0;
+	margin: 20px 20px;
 	padding: 20px 0;
 }
 .contact-header p{
@@ -20,8 +19,20 @@
     line-height: 1.5;
     padding: 15px;
 }
+.form-control:active{
+    border: 2px solid #a64ac9;
+}
 .contact-form button{
-    padding: 10px;
-    font-size: 22px;
+    padding: 15px;
+    font-size: 25px;
     line-height: 1.5;
+    background-color: #a64ac9;
+	color: #fff;
+	border: 5px solid #17e9e0;
+	border-radius: 10px;
+}
+.contact-form button:hover{
+	background-color: #fccd04;
+	color: #000;
+	border: 5px solid #000;
 }
