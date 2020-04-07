@@ -1,0 +1,46 @@
+/**********SERVICE SEC**********/
+.services-section{
+    border: 1px solid red;
+    padding: 10px 0;
+}
+.service-label{
+	margin: 20px 0;
+	padding: 20px 0;
+}
+.service-label h2{
+	font-size: 50px;
+	line-height: 1.5;
+}
+.service-blocks	.service{
+    margin: 30px 0;
+    padding: 30px;
+    flex-basis: 30%;
+    box-shadow: 0 10px 10px 0 #000;
+}
+.service-blocks, .service-header{
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-blocks{
+	justify-content: space-around;
+}
+.service-header{
+    justify-content: space-evenly;
+}
+.service-header ion-icon{
+    font-size: 30px;
+    line-height: 1.5;
+}
+.service-header h5{
+    font-size: 27px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.service-dscrp{
+    margin: 20px 0 0 90px;
+}
+.service-dscrp p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}

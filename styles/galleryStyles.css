@@ -1,0 +1,23 @@
+
+/**********GALLERY SEC**********/
+.gallery-section{
+    border: 1px solid red;
+    padding: 10px 0;
+}
+.gallery-header{
+	margin: 20px 0;
+	padding: 20px 0;
+}
+.gallery-header p{
+	font-size: 30px;
+	line-height: 1.5;
+}
+.img{
+    box-shadow: 0 5px 5px 0 #000;
+    margin: 10px 0;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
