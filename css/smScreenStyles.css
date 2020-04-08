@@ -39,7 +39,6 @@ body{
 	margin: 20px 10px;
 	text-align: justify;
 }
-
 .address-details p{
 	font-size: 20px;
 	font-weight: 300;
@@ -73,7 +72,7 @@ body{
 	border-radius: 5px;
 }
 .descrp-para p{
-	margin: 10px 0;
+	margin: 50px 0;
 }
 .descrp-cta-btn button{
 	background-color: #a64ac9;
@@ -132,11 +131,75 @@ body{
 	margin: 10px 0 0 10px;
 	line-height: 1.5;
 }
+.services{
+	padding: 20px;
+	flex-basis: 10%;
+}
+.service-icon-title h4{
+	margin: 20px 0;
+	font-size: 25px;
+	font-weight: 600;
+}
+.services ion-icon{
+	font-size: 30px;
+}
+.services p{
+	margin: 10px 0 0 10px;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.5;
+}
 
 
 /**********CTA SEC**********/
 .cta-line h2{
 	margin-left: 20px;
+}
+
+/**********TESTOMONIALS SEC**********/
+.testimon-block{
+	box-shadow: 0 5px 5px 0 #a64ac9;
+	padding: 30px;
+}
+.testimon-block blockquote{
+	font-size: 22px;
+	margin: 20px 0;
+}
+.testimon-block p{
+	font-size: 20px;
+}
+.testimon-block img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 5px 0;
+}
+
+/**********INFOBOTTOM SEC**********/
+
+.bottom-left, .bottom-middle, .bottom-right{
+	margin: 10px 0;
+	flex-basis: 60%;
+}
+.name h3{
+	font-size: 35px;
+	line-height: 1.5;
+}
+.name h5{
+	font-size: 25px;
+}
+.bottom-middle h5{
+	font-size: 30px;
+	margin: 10px;
+}
+.linksList{
+	margin: 10px;
+	font-size: 22px;
+}
+.linksList a:active{
+	color: #fccd04;
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 }
