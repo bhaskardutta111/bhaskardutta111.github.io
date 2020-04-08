@@ -58,7 +58,7 @@
 
         <div class="navbar navbar-expand-lg menu-top-section">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <ion-icon name="menu-outline"></ion-icon>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
@@ -109,13 +109,14 @@
           </div>
           <div class="container main-figure-descrip">
             <div class="main-figure wow fadeInLeft">
-              <img src="./images/mainFig.jpg" alt="about fig" width="400px" height="400px">
+              <img src="./images/mainFig.jpg" alt="about fig">
             </div>
             <div class="main-descrp">
               <div class="descrp-para">
                 <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                  In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
-                  In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                  <button type="button" class="main-knowMore-btn">Know more</button>
+                  <p id="main-morePara">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
                 </p>
               </div>
               <div class="descrp-cta-btn wow fadeInRightBig">
@@ -313,6 +314,16 @@
           clickable: true,
           },
     });
+    if (window.matchMedia("(max-width: 600px)").matches) {
+      var swiper = new Swiper('.testimon-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: '.swiper-pagination',
+          clickable: true,
+          },
+    });
+    }
     </script>
 </body>
 </html>

@@ -210,6 +210,8 @@ table {
 	flex-basis: 50%;
 }
 .main-figure img{
+	width: 400px;
+	height: 400px;
 	margin: 50px 0;
 	box-shadow: 0 5px 5px 0 #a64ac9;
 	border-radius: 5px;
@@ -232,9 +234,10 @@ table {
 	background-color: #fccd04;
 	color: #000;
 	border: 5px solid #000;
-
 }
-
+.main-knowMore-btn{
+	display: none;
+}
 /**********SERVICES SEC**********/
 .services-section{
 	padding: 10px 0;

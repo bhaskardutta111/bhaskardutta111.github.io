@@ -18,4 +18,12 @@ var tasksOnLoad = function() {
   new WOW().init();
 };
 
+var mainMoreBtn = document.querySelector('.main-knowMore-btn');
+mainMoreBtn.addEventListener("click", function() {
+  var mainMorePara = document.querySelector("#main-morePara");
+    mainMorePara.style.display = "block";
+    mainMoreBtn.style.display = "none";
+});
+
+
   window.onload = tasksOnLoad();
