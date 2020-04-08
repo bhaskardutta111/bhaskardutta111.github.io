@@ -313,10 +313,16 @@
           clickable: true,
           },
     });
+     if (window.matchMedia("(max-width: 600px)").matches) {
+      var swiper = new Swiper('.testimon-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: '.swiper-pagination',
+          clickable: true,
+          },
+        });
+    }
     </script>
 </body>
 </html>
-
-
-<!-- epiz_25439283
-3PKglZ0Y2QHVcAD -->
