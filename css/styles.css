@@ -51,8 +51,8 @@ table {
 body {
     font: 18px 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 /***********FIRST BLOCK**********/
 .first-block{
@@ -281,7 +281,7 @@ body {
     margin: 5px 0;
 }
 
-/**********MEMBERS BLOCK**********/
+/**********MEMBER BLOCK**********/
 #member{
     background-color: #3A7BD5;
 }
@@ -336,11 +336,9 @@ body {
 #random{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
 }
 .random-fig{
     flex-basis: 55%;
-    border: 1px solid red;
 }
 .random-fig img{
     width: 100%;
@@ -349,8 +347,7 @@ body {
     height: auto
 }
 .rand-block-descrp{
-    flex-basis: 30%;
-    border: 1px solid red;
+    flex-basis: 40%;
 }
 .random-header h3{
     font: 30px 'montserrat', sans-serif;
@@ -363,6 +360,152 @@ body {
     font-weight: 400;
     line-height: 24px;
     padding: 20px;
+    text-align: justify;
+}
+.rand-block-descrp ul{
+    padding: 20px;
+}
+.rand-block-descrp ul li{
+    font: 14px 'raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 24px;
+}
+.rand-block-descrp ion-icon{
+    font: 15px 'raleway', sans-serif;
+    font-weight: 500;
+}
+
+/**********MEMBERS BLOCK**********/
+.team-header{
+    margin: 30px;
+    padding: 20px;
+}
+.team-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.team-header p{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+.team-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.team-member{
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.member-socials{
+    flex-basis: 10%;
+}
+.member-descrp{
+    flex-basis: 90%;
+    border: 1px solid yellow;
+}
+.member-socials a{
+    display: block;
+    font: 20px 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.team-member img{
+    width: 100%;
+    height: auto;
+    max-width: 270px;
+    max-height: 358px;
+}
+.team-member h4{
+    font: 20px 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 10px 0;
+}
+.team-member p{
+    font: 18px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+/**********SUBSCRIBE ONE BLOCK**********/
+#subs-one{
+    background-color: #3A7BD5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subscribe-para{
+    margin: 40px 20px;
+    padding: 20px;
+}
+.subscribe-para h4{
+    font: 30px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 42px;
+}
+.subscribe-btn{
+    margin: 30px 20px;
+    padding: 20px;
+}
+.subscribe-btn a{
+    font: 16px 'montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    color: #3A7BD5;
+}
+.subscribe-btn button{
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 25px;
+}
+.subscribe-btn button:hover{
+    background-color: #3A7BD5;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+/**********COUNTER BLOCK**********/
+#counter{
+    background-color: #F2F2F2;
+    color: #000;
+}
+.row{
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.col-2{
+    color: #000;
+    margin: 0 30px;
+    padding: 0 20px;
+}   
+.counter-box ion-icon{
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 50%;
+    padding: 30px;
+}
+.counter-box ion-icon:hover{
+    background-color: #3A7BD5;
+    color: #fff;
+}
+.counter-data{
+    font-size: 48px 'montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 58px;
 }
 
 
@@ -370,19 +513,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-.counter {
-    background-color:#f5f5f5;
-    padding: 20px 0;
-    border-radius: 5px;
-}
 
 
 

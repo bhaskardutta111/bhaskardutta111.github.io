@@ -1,22 +1,21 @@
 var counter = document.querySelectorAll(".counter-data")
 
 window.addEventListener("load", function() {
-    counter.forEach(function(k, v) {
+    counter.forEach(function(x, y) {
 	
-    var start = counter[v].getAttribute('data-count-start')
-    var end = counter[v].getAttribute('data-count-end')
-    var speed = counter[v].getAttribute('data-speed')
+    var start = counter[y].getAttribute('data-count-start')
+    var end = counter[y].getAttribute('data-count-end')
+    var speed = counter[y].getAttribute('data-speed')
 
     setInterval(function() {
         start++;
         if(start > end) {
         return false;
         }
-        counter[v].innerText = start;
+        counter[y].innerText = start;
     }, speed)
-})
+})}, false)
 
-}, false)
 
 var collapseBtn = document.querySelector(".collapseBtn");
 
