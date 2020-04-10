@@ -479,6 +479,7 @@ body {
 #counter{
     background-color: #F2F2F2;
     color: #000;
+    border: 1px solid red;
 }
 .row{
     padding: 50px 0;
@@ -515,6 +516,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;    
     color: #fff;
+    border: 1px solid #fff;
 }
 .testimonial-header{
     margin: 30px;
@@ -565,7 +567,6 @@ body {
     line-height: 30px;
 }
 .slide-container {
-    /* border: 1px solid red; */
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -601,31 +602,71 @@ body {
     to {opacity: 1}
   }
 
-
-
-
-
+/**********FAQSECTION BLOCK**********/
+#faqs{
+    border: 1px solid #fff;
+}
+.faq-header{
+    margin: 30px;
+    padding: 20px;
+}
+.faq-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.faq-header p{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+.faq-lists{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.faq-group-one{
+    flex-basis: 45%;
+}
+.faq-group-two{
+    flex-basis: 45%;
+}
 .collapseBtn {
-    background-color: #777;
-    color: white;
+    font: 16px 'montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 20px;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
-  }
-  
-  .active, .collapseBtn:hover {
-    background-color: #555;
-  }
-  
-  .btnContent {
-    padding: 0 18px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);
+}
+.collapseBtn:hover {
+    background-color: #2187e7;
+    color: #fff;
+}
+.collapseBtn:active{
+    outline: none;
+    border: none;
+
+}
+.btnContent{
+    font: 16px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;    
     max-height: 0;
     overflow: hidden;
+    padding: 5px 10px;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+}
+  
+  .btnContent {
   }
   

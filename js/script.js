@@ -17,20 +17,21 @@
 // })}, false)
 
 
-// var collapseBtn = document.querySelector(".collapseBtn");
+var collapseBtn = document.getElementsByClassName("collapseBtn");
 
-// for (var i = 0; i < collapseBtn.length; i++) {
-//     collapseBtn[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = document.querySelector(".btnContent");
-//     if (content.style.maxHeight){
-//         content.style.maxHeight = null;
-//     } else {
-//         content.style.maxHeight = content.scrollHeight + "px";
-//     } 
-//     });
-// }
+for (var i = 0; i < collapseBtn.length; i++) {
+    collapseBtn[i].addEventListener("click", function() {
+    this.classList.toggle("show");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    } 
+    });
+}
 
+/////////////////////////
 var slideInd = 0;
 showSlides();
 
