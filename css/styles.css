@@ -55,16 +55,13 @@ body {
     color: #000;
 }
 /***********FIRST BLOCK**********/
-.first-block{
-    border: 1px solid red;
-}
+
 .block-one-container{
     width: 100%;
 }
 
 /**********SEC BLOCK**********/
 .sec-block{
-    border: 1px solid red;
     background-color: #F9F9F9;
 }
 .info-header{
@@ -655,7 +652,6 @@ body {
 .collapseBtn:active{
     outline: none;
     border: none;
-
 }
 .btnContent{
     font: 16px 'raleway', sans-serif;
@@ -667,6 +663,168 @@ body {
     transition: max-height 0.2s ease-out;
 }
   
-  .btnContent {
-  }
-  
+/**********PRCING BLOCK**********/
+.pricing-header{
+    margin: 30px;
+    padding: 20px;
+}
+.pricing-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.pricing-header p{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+.pricing-charts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.chart{
+    border: 5px solid #000;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #2187e7;
+    color: #fff;
+}
+.chart-header{
+    margin-bottom: 10px;
+}
+.chart-benefits li{
+    font: 14px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0;    
+}
+.chart-benefits ul span::before{
+    content: "\f192";
+    font-family: fontawesome;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.pricing-charts h5{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+}
+.pricing-charts p{
+    font: 40px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+/**********SUBSCRIBE SEC TWO BLOCK**********/
+.subscribe-section-two{
+    background: url("/images/testimonBg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: #fff;
+}
+.subscribe-para h4{
+    font: 40px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 56px;
+    margin-top: 30px;
+}
+#exampleInputEmail1{
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+#exampleInputEmail1:focus{
+    border: 3px solid #2187e7;
+}
+.form-group{
+    display: flex;
+    position: relative;
+}
+.form-group .btn{
+    background-color: #2187e7;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    padding: 15px 50px;
+    position: absolute;
+    right: 0;
+}
+.form-group .btn:hover{
+    background-color: #fff;
+    color: #2187e7;
+    border: 3px solid #2187e7;
+}
+
+/**********PARTNERS BLOCK**********/
+.partners-header{
+    margin: 30px;
+    padding: 20px;
+}
+.partners-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.partners-header p{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/**********CONTACT BLOCK**********/
+.contact-header{
+    margin: 30px;
+    padding: 20px;
+}
+.contact-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.contact-header p{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+.contact-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact ion-icon{
+    font: 40px 'FontAwesome', sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    color: #2187e7;
+    margin: 10px 0;
+}
+.contact-options .contact{
+    font: 18px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+.contact p{
+    margin: 10px 0;
+}
