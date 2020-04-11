@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,7 +20,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,71 +47,104 @@ table {
 }
 
 /***********RESET ENDS**********/
+*{
+    box-sizing: border-box;
+}
 body {
     font: 18px 'Montserrat', sans-serif;
     overflow-x: hidden;
     background-color: #fff;
     color: #000;
+    position: relative;
+    height: 100%;
 }
+
 /***********FIRST BLOCK**********/
 .first-block{
-    background: url("/images/macbook-336704_1280-min.jpg");
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(/images/mainBg.jpg);
 }
-.block-one-container{
-    width: 100%;
-    border: 1px solid red;
+.navbar{
+    margin: 10px 0;
 }
-.cta-buttons{
-    margin: 0 100px;
-}
-.cta-buttons button{
-    font: 16px 'montserrat', sans-serif;
+.navbar-brand{
+    font: 26px 'raleway', sans-serif;
     font-weight: 700;
-    line-height: 16px;
-    padding: 15px;
-    background: transparent;
-    border-radius: 30px;
-    color: #000;
+    line-height: 24px;   
+    color: #fff;
+}
+.navbar-collapse ul li{
+    font: 20px 'raleway', sans-serif;
+    font-weight: 900;
+    line-height: 24px;  
+}
+.navbar-nav{
+    margin: 0 auto;
+}
+.nav-item a{
+    color: #fff;
+    margin-right: 10px;
+}
+.navbar-collapse a:hover{
+    color: #2187e7;
+}
+.collnav-inline h6{
+    font: 14px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 16px;  
+    color: #fff;
+}
+.collnav-inline a{
+    color: #fff;
+    text-decoration: none;
+}
+.collnav-inline h5, ion-icon{
+    font: 20px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    display: inline-block;  
 }
 .header-text{
-    margin: 150px 0;
+    /* margin-top: 220px; */
+    margin: 220px 0 200px 0;
     background: transparent;
 }
 .header-text h1{
     font: 70px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 70px;   
-}
-.navbar-collapse{
-    margin: 0 50px;
+    color: #fff;
 }
 .header-text h3{
     font: 40px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 56px;   
+    color: #fff;
 }
 .header-info{
     color: #2187e7;
 }
-.navbar-nav a{
-    font: 24px 'montserrat', sans-serif;
-    font-weight: 700;
-    line-height: 15px;   
-    color: #2187e7;
+.cta-buttons{
+    margin: 50px auto;
 }
-.phone-top h3, ion-icon,p{
-    font: 20px 'montserrat', sans-serif;
+.cta-buttons button{
+    font: 16px 'montserrat', sans-serif;
     font-weight: 700;
-    line-height: 30px;   
-    color: #2187e7;
+    line-height: 16px;
+    margin: 0 10px;
+    padding: 15px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    color: #fff;
 }
-.phone-top ion-icon, p{
-    display: inline-block;
 
-}
 /**********SEC BLOCK**********/
 .sec-block{
     background-color: #F9F9F9;
+    position: relative;
 }
 .info-header{
     margin: 30px;
@@ -164,6 +196,9 @@ body {
 }
 
 /**********ABOUT BLOCK**********/
+#about{
+    position: relative;
+}
 .about-header{
     margin: 30px;
     padding: 20px;
@@ -193,13 +228,13 @@ body {
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 42px
+    line-height: 42px;
     color: #333333;
     margin-bottom: 10px;
 }
 .who-para p{   
     font-family: raleway, sans-serif;
-    font-weight: 400
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #222222;
@@ -258,10 +293,15 @@ body {
 	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
 }
 
-.html       { width:90%;  -moz-animation:html 2s ease-out;       -webkit-animation:html 2s ease-out;       }
-.css        { width:80%;  -moz-animation:css 2s ease-out;        -webkit-animation:css 2s ease-out;        }
-.js      { width:60%;  -moz-animation:js 2s ease-out;      -webkit-animation:js 2s ease-out;      }
-.wp   { width:70%;  -moz-animation:wp 2s ease-out;   -webkit-animation:wp 2s ease-out;   }
+.html       { width:90%; animation:html 2s ease-out;  -moz-animation:html 2s ease-out;       -webkit-animation:html 2s ease-out;       }
+.css        { width:80%; animation:html 2s ease-out;  -moz-animation:css 2s ease-out;        -webkit-animation:css 2s ease-out;        }
+.js      { width:60%; animation:html 2s ease-out;  -moz-animation:js 2s ease-out;      -webkit-animation:js 2s ease-out;      }
+.wp   { width:70%; animation:html 2s ease-out;  -moz-animation:wp 2s ease-out;   -webkit-animation:wp 2s ease-out;   }
+
+@keyframes html       { 0%  { width:0px;} 100%{ width:70%;}  }
+@keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@keyframes js      { 0%  { width:0px;} 100%{ width:50%;}  }
+@keyframes wp   { 0%  { width:0px;} 100%{ width:10%;}  }
 
 @-moz-keyframes html       { 0%  { width:0px;} 100%{ width:70%;}  }
 @-moz-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
@@ -274,6 +314,9 @@ body {
 @-webkit-keyframes wp   { 0%  { width:0px;} 100%{ width:10%;}  }
 
 /**********FEATURES BLOCK**********/
+#features{
+    position: relative;
+}
 .features-header{
     margin: 30px;
     padding: 20px;
@@ -424,6 +467,9 @@ body {
 }
 
 /**********MEMBERS BLOCK**********/
+#team{
+    position: relative;
+}
 .team-header{
     margin: 30px;
     padding: 20px;
@@ -557,6 +603,7 @@ body {
 
 /**********TESTIMONIALS BLOCK**********/
 #testimonial{
+    position: relative;
     background: url("/images/testimonBg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -714,6 +761,9 @@ body {
 }
   
 /**********PRCING BLOCK**********/
+#pricing{
+    position: relative;
+}
 .pricing-header{
     margin: 30px;
     padding: 20px;
@@ -841,6 +891,9 @@ body {
 }
 
 /**********CONTACT BLOCK**********/
+#contact{
+    position: relative;
+}
 .contact-header{
     margin: 30px;
     padding: 20px;
