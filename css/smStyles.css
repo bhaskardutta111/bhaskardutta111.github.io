@@ -1,6 +1,5 @@
-@media only screen and (min-width: 1001px) {
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@media only screen and (max-width: 500px) {
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -47,7 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /***********RESET ENDS**********/
 *{
     box-sizing: border-box;
@@ -61,6 +59,7 @@ body {
     height: 100%;
 }
 
+
 /***********FIRST BLOCK**********/
 .first-block{
     height: 100%;
@@ -68,78 +67,15 @@ body {
     overflow: hidden;
     background: url(/images/mainBg.jpg);
 }
-.navbar{
-    margin: 10px 0;
-}
 .navbar-brand{
     font: 26px 'raleway', sans-serif;
     font-weight: 700;
     line-height: 24px;   
     color: #fff;
 }
-.navbar-collapse ul li{
-    font: 20px 'raleway', sans-serif;
-    font-weight: 900;
-    line-height: 24px;  
-}
-.navbar-nav{
-    margin: 0 auto;
-}
-.nav-item a{
+.navbar-toggler-icon{
     color: #fff;
-    margin-right: 10px;
-}
-.navbar-collapse a:hover{
-    color: #2187e7;
-}
-.collnav-inline h6{
-    font: 14px 'montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 16px;  
-    color: #fff;
-}
-.collnav-inline a{
-    color: #fff;
-    text-decoration: none;
-}
-.collnav-inline h5, ion-icon{
-    font: 20px 'raleway', sans-serif;
-    font-weight: 400;
-    line-height: 30px;
-    display: inline-block;  
-}
-.header-text{
-    margin: 220px 0 200px 0;
-    background: transparent;
-}
-.header-text h1{
-    font: 70px 'montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 70px;   
-    color: #fff;
-}
-.header-text h3{
-    font: 40px 'montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 56px;   
-    color: #fff;
-}
-.header-info{
-    color: #2187e7;
-}
-.cta-buttons{
-    margin: 50px auto;
-}
-.cta-buttons button{
-    font: 16px 'montserrat', sans-serif;
-    font-weight: 700;
-    line-height: 16px;
-    margin: 0 10px;
-    padding: 15px;
-    background: transparent;
-    border-radius: 30px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 1px solid red;
 }
 
 /**********SEC BLOCK**********/
@@ -147,42 +83,28 @@ body {
     background-color: #F9F9F9;
     position: relative;
 }
-.info-blocks{
-    border: 1px solid red;
-}
 .info-header{
-    margin: 30px;
     padding: 20px;
 }
 .info-header h2{
-    font: 40px 'Montserrat', sans-serif;
+    font: 30px 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 20px 0;
 }
 .info-header p{
-    font: 16px 'Raleway', sans-serif;
+    font: 20px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 100px;
     padding: 10px 0;
     text-align: center;
 }
-.info-blocks{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.info-block{
-    border: 1px solid red;
-    flex-basis: 25%;
-    padding: 20px;
-}
 .info-block ion-icon{
-    font-size: 60px;
+    font-size: 50px;
     background-color: #3A7BD5;
     color: #fff;
     border: 1px solid;
     padding: 10px;
+    margin: 10px 0;
     border-radius: 50%;
 }
 .info-block h3{
@@ -205,8 +127,8 @@ body {
     position: relative;
 }
 .about-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 30px 0;
+    padding: 20px 0;
 }
 .about-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -217,25 +139,18 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 100px;
-    padding: 10px 0;
+    padding: 0 10px;
+    margin: 30px 0;
     text-align: center;
-}
-.about-para-bars{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.who-para, .skills-bars{
-    flex-basis: 50%;
 }
 .who-para h3{
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
-    color: #333333;
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 10px 0;
+    text-align: center;
 }
 .who-para p{   
     font-family: raleway, sans-serif;
@@ -244,6 +159,7 @@ body {
     line-height: 24px;
     color: #222222;
     margin: 20px 0;
+    text-align: center;
 }
 #button{
     background-color: #2187e7;
@@ -254,9 +170,10 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #fff;
-    padding: 15px;
+    margin: 10px 0 50px 0;
+    padding: 20px;
 }
-#button:hover{
+#button:active{
     background-color: #fff;
     color: #2187e7;
     border: 2px solid #2187e7;
@@ -265,10 +182,9 @@ body {
 	width:100%;
 	margin:0;
 	position:relative;
-	float:left;
 	font-size:12px;
 	line-height:2em;
-	padding:30px 0 30px;
+	padding:10px 0 10px;
 }
 #skill { 
 	list-style:none; 
@@ -277,21 +193,20 @@ body {
 #skill li { 
 	margin-bottom:70px; 
 	background: #EDF4F8; 
-	height: 12px; 
+	height: 20px; 
 	border-radius:3px; 
 	border: 1px solid #000; 
 }
 #skill li em { 
 	position:relative; 
-    top:-30px;
+    top:-50px;
     font-size: 20px;
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 30px;
 }
-
 .expand { 
-	height:10px; 
+	height: 20px; 
 	background:#3A7BD5; 
 	position:absolute;
 	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
@@ -322,8 +237,8 @@ body {
     position: relative;
 }
 .features-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 20px 0;
 }
 .features-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -334,21 +249,17 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
-.features-fig-list{
-    display: flex;
-}
-.feature-fig{
-    /* border: 1px solid red; */
-    flex-basis: 40%;
+.feature-fig img{
+    width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    height: auto;
 }
 .feature-list{
-    /* border: 1px solid red; */
-    flex-basis: 30%;
-    margin: 0 50px;
+    text-align: center;
 }
 .feature-list ion-icon{
     font-size: 40px;
@@ -357,14 +268,14 @@ body {
     vertical-align: middle;
 }
 .feat-header{
-    font: 16px 'montserrat', sans-serif;
+    font: 20px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 30px;
     color: #333;
-    padding-left: 20px;
+    padding-left: 10px;
     vertical-align: middle;
 }
-.feat-three, .feat-two{
+.feat{
     margin: 40px 0;
 }
 .feat p{
@@ -372,7 +283,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: #222;
-    margin: 5px 0;
+    margin: 20px 0;
 }
 
 /**********MEMBER BLOCK**********/
@@ -380,24 +291,15 @@ body {
     background-color: #3A7BD5;
 }
 .member-contents{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 0;
-    margin: 30px 40px 0 30px;
-    vertical-align: top; 
-}
-.member-fig{
-    margin: 0 20px 0 100px;
+    text-align: center;
+    padding: 10px 0;
 }
 .member-fig img{
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    flex-basis: 20%;
-}
-.member-name-dsgn{
-    flex-basis: 20%;
-    margin: 0 50px;
 }
 .member-name-dsgn h3{
     font: 24px 'montserrat', sans-serif;
@@ -411,14 +313,6 @@ body {
     line-height: 30px;
     margin: 5px 0;
 }
-.line{
-    height: 150px;
-    border-left: 5px solid;
-    margin: 0 70px;
-}
-.member-quote{
-    flex-basis: 40%;
-}
 .member-quote p{
     font: 16px 'raleway', sans-serif;
     font-weight: 400;
@@ -427,27 +321,16 @@ body {
 }
 
 /**********RANDOM BLOCK**********/
-#random{
-    display: flex;
-    flex-wrap: wrap;
-}
-.random-fig{
-    flex-basis: 55%;
-}
 .random-fig img{
-    width: 100%;
-    max-width: 811px;
-    max-height: 500px;
+    max-width: 100%;
     height: auto
-}
-.rand-block-descrp{
-    flex-basis: 40%;
 }
 .random-header h3{
     font: 30px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 42px;
     padding: 20px;
+    text-align: center;
 }
 .random-descrp p{
     font: 16px 'raleway', sans-serif;
@@ -455,9 +338,11 @@ body {
     line-height: 24px;
     padding: 20px;
     text-align: justify;
+    text-align: center;
 }
 .rand-block-descrp ul{
-    padding: 20px;
+    margin: 0 20px;
+    padding: 10px;
 }
 .rand-block-descrp ul li{
     font: 14px 'raleway', sans-serif;
@@ -466,7 +351,7 @@ body {
     line-height: 24px;
 }
 .rand-block-descrp ion-icon{
-    font: 15px 'raleway', sans-serif;
+    font: 25px 'raleway', sans-serif;
     font-weight: 500;
 }
 
@@ -475,50 +360,43 @@ body {
     position: relative;
 }
 .team-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
 }
 .team-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .team-header p{
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
     padding: 10px 0;
     text-align: center;
 }
-.team-blocks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 .team-member{
-    flex-basis: 30%;
     display: flex;
-    flex-wrap: wrap;
+    margin: 20px 0;
 }
 .member-socials{
     flex-basis: 10%;
 }
 .member-descrp{
+    text-align: center;
     flex-basis: 90%;
 }
 .member-socials a{
     display: block;
-    font: 20px 'Montserrat', sans-serif;
+    font: 25px 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 20px;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 .team-member img{
     width: 100%;
     height: auto;
-    max-width: 270px;
-    max-height: 358px;
 }
 .team-member h4{
     font: 20px 'Montserrat', sans-serif;
@@ -530,28 +408,28 @@ body {
     font: 18px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
 }
 
 /**********SUBSCRIBE ONE BLOCK**********/
 #subs-one{
     background-color: #3A7BD5;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 .subscribe-para{
-    margin: 40px 20px;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 30px 0;
+    text-align: center;
 }
 .subscribe-para h4{
     font: 30px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 42px;
+    color: #fff;
 }
 .subscribe-btn{
-    margin: 30px 20px;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 .subscribe-btn a{
     font: 16px 'montserrat', sans-serif;
@@ -565,7 +443,7 @@ body {
     border-radius: 30px;
     padding: 25px;
 }
-.subscribe-btn button:hover{
+.subscribe-btn button:active{
     background-color: #3A7BD5;
     color: #fff;
     border: 2px solid #fff;
@@ -576,17 +454,17 @@ body {
 #counter{
     background-color: #F2F2F2;
     color: #000;
-    border: 1px solid red;
 }
-.row{
+.counter-list{
     padding: 50px 0;
-    margin: 0 auto;
+    display: flex;
 }
 .col-2{
     color: #000;
-    margin: 0 30px;
-    padding: 0 20px;
-}   
+    margin: 0 60px;
+    padding: 20px 0; 
+    flex-basis: 25%;    
+}
 .counter-box ion-icon{
     background-color: #fff;
     font-size: 30px;
@@ -595,9 +473,10 @@ body {
     border-radius: 50%;
     padding: 30px;
 }
-.counter-box ion-icon:hover{
-    background-color: #3A7BD5;
-    color: #fff;
+.counter-box p{
+    font-size: 30px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
 }
 .counter-data{
     font-size: 48px 'montserrat', sans-serif;
@@ -617,96 +496,19 @@ body {
     border: 1px solid #fff;
 }
 .testimonial-header{
-    margin: 30px;
-    padding: 20px;    
+    margin: 20px 0;
+    padding: 20px 0;    
 }
 .testimonial-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 20px 0;
 }
-.slide{
-    display: none;
-}
-.slide-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.client-fig-name{
-    flex-basis: 20%;
-}
-.client-testimonial{
-    flex-basis: 70%;
-    margin: 20px 0;   
-}
-.slide img{
-    width: 100%;
-    height: auto;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-    margin: 10px 0;
-}
-.slide h5{
-    font: 18px 'montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 22px;
-    margin: 10px 0;
-}
-.slide p{
-    font: 16px 'raleway', sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-}
-.client-testimonial p{
-    font: 16px 'raleway', sans-serif;
-    font-weight: 400;
-    line-height: 30px;
-}
-.slide-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  border: 2px solid #fff;
-}
-.active, .dot:hover {
-    background-color: #717171;
-}
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration: 5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
 
 /**********FAQSECTION BLOCK**********/
-#faqs{
-    border: 1px solid #fff;
-}
 .faq-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 20px 0;
 }
 .faq-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -717,38 +519,21 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
-}
-.faq-lists{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around;
-}
-.faq-group-one{
-    flex-basis: 45%;
-}
-.faq-group-two{
-    flex-basis: 45%;
 }
 .collapseBtn {
     font: 16px 'montserrat', sans-serif;
     font-weight: 700;
     line-height: 20px;
-    cursor: pointer;
     border: none;
     text-align: left;
     outline: none;
     margin: 10px 0;
-    padding: 10px 20px;
+    padding: 20px;
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);
-}
-.collapseBtn:hover {
-    background-color: #2187e7;
-    color: #fff;
 }
 .collapseBtn:active{
     outline: none;
@@ -763,14 +548,17 @@ body {
     padding: 5px 10px;
     transition: max-height 0.2s ease-out;
 }
-  
+
 /**********PRCING BLOCK**********/
+.pricing-section div{
+    border: 1px solid red;
+}
 #pricing{
     position: relative;
 }
 .pricing-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 20px 0;
 }
 .pricing-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -781,14 +569,8 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
-}
-.pricing-charts{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .chart{
     border: 5px solid #000;
@@ -797,9 +579,6 @@ body {
     border-radius: 10px;
     background-color: #2187e7;
     color: #fff;
-}
-.chart-header{
-    margin-bottom: 10px;
 }
 .chart-benefits li{
     font: 14px 'Raleway', sans-serif;
@@ -833,107 +612,21 @@ body {
     background-size: cover;    
     color: #fff;
 }
-.subscribe-para h4{
+
+
+
+
+
+/* .header-text h1{
     font: 40px 'montserrat', sans-serif;
     font-weight: 400;
-    line-height: 56px;
-    margin-top: 30px;
+    line-height: 70px;   
 }
-#exampleInputEmail1{
-    border: 3px solid #fff;
-    border-radius: 20px;
-    padding: 20px;
-    background: transparent;
-    color: #fff;
-    font-family: 'montserrat', sans-serif;
+.header-text h3{
+    font: 20px 'montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-}
-#exampleInputEmail1:focus{
-    border: 3px solid #2187e7;
-}
-.form-group{
-    display: flex;
-    position: relative;
-}
-.form-group .btn{
-    background-color: #2187e7;
-    border: 3px solid #fff;
-    border-radius: 20px;
-    font-family: 'montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: #fff;
-    padding: 15px 50px;
-    position: absolute;
-    right: 0;
-}
-.form-group .btn:hover{
-    background-color: #fff;
-    color: #2187e7;
-    border: 3px solid #2187e7;
-}
+    line-height: 56px;   
+} */
 
-/**********PARTNERS BLOCK**********/
-.partners-header{
-    margin: 30px;
-    padding: 20px;
-}
-.partners-header h2{
-    font: 40px 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin: 20px 0;
-}
-.partners-header p{
-    font: 16px 'Raleway', sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
-    text-align: center;
-}
-
-/**********CONTACT BLOCK**********/
-#contact{
-    position: relative;
-}
-.contact-header{
-    margin: 30px;
-    padding: 20px;
-}
-.contact-header h2{
-    font: 40px 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin: 20px 0;
-}
-.contact-header p{
-    font: 16px 'Raleway', sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
-    text-align: center;
-}
-.contact-options{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.contact ion-icon{
-    font: 40px 'FontAwesome', sans-serif;
-    font-weight: 400;
-    line-height: 40px;
-    color: #2187e7;
-    margin: 10px 0;
-}
-.contact-options .contact{
-    font: 18px 'montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 18px;
-}
-.contact p{
-    margin: 10px 0;
-}
 
 }

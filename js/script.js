@@ -8,6 +8,7 @@ window.onscroll = function() {
         fixedTop.style.margin = '0';
     } else if (scrollTop > 50) {
         fixedTop.style.background = '#333';
+        fixedTop.style.margin = '0';
     }
     else {
         fixedTop.style.background = 'transparent';
