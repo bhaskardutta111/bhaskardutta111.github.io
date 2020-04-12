@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 501px) {
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -141,7 +141,9 @@ body {
     border: 2px solid #fff;
     color: #fff;
 }
-
+.smMenu, .closeBtn{
+    display: none;
+}
 /**********SEC BLOCK**********/
 .sec-block{
     background-color: #F9F9F9;

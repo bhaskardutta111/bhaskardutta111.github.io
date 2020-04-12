@@ -15,6 +15,14 @@ window.onscroll = function() {
     }
 };
 
+////////////////////////////
+// var smMenu = document.getElementsByClassName('smMenu');
+//     document.querySelector(".navbar-toggler").addEventListener('click', function(){
+
+//     })    
+
+
+/////////////////////////////////////////
 var collapseBtn = document.getElementsByClassName("collapseBtn");
 
 for (var i = 0; i < collapseBtn.length; i++) {
