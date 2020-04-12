@@ -13,13 +13,7 @@ window.onscroll = function() {
     else {
         fixedTop.style.background = 'transparent';
     }
-};
-
-////////////////////////////
-// var smMenu = document.getElementsByClassName('smMenu');
-//     document.querySelector(".navbar-toggler").addEventListener('click', function(){
-
-//     })    
+};   
 
 
 /////////////////////////////////////////
@@ -40,7 +34,6 @@ for (var i = 0; i < collapseBtn.length; i++) {
 /////////////////////////
 var slideInd = 0;
 showSlides();
-
 
 function showSlides() {
     var slides = document.getElementsByClassName("slide");

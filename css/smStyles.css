@@ -58,10 +58,12 @@ body {
     position: relative;
     height: 100%;
 }
-
+#whole-body{
+    overflow-x: hidden;
+}
 /***********FIRST BLOCK**********/
 .first-block{
-     height: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     background: url(/images/testimonBg.jpg);
@@ -619,9 +621,6 @@ body {
 }
 
 /**********PRCING BLOCK**********/
-.pricing-section div{
-    border: 1px solid red;
-}
 #pricing{
     position: relative;
 }

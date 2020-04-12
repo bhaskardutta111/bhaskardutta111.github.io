@@ -149,9 +149,7 @@ body {
     background-color: #F9F9F9;
     position: relative;
 }
-.info-blocks{
-    border: 1px solid red;
-}
+
 .info-header{
     margin: 30px;
     padding: 20px;
@@ -165,8 +163,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 100px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .info-blocks{
@@ -175,7 +172,6 @@ body {
     margin: 0 auto;
 }
 .info-block{
-    border: 1px solid red;
     flex-basis: 25%;
     padding: 20px;
 }
@@ -219,8 +215,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 100px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .about-para-bars{
@@ -336,8 +331,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .features-fig-list{
@@ -489,14 +483,14 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .team-blocks{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 .team-member{
     flex-basis: 30%;
@@ -504,23 +498,24 @@ body {
     flex-wrap: wrap;
 }
 .member-socials{
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 .member-descrp{
-    flex-basis: 90%;
+    flex-basis: 70%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 .member-socials a{
     display: block;
     font: 20px 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 20px;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .team-member img{
     width: 100%;
     height: auto;
-    max-width: 270px;
-    max-height: 358px;
+    max-width: 250px;
+    max-height: 300px;
 }
 .team-member h4{
     font: 20px 'Montserrat', sans-serif;
@@ -541,19 +536,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px 0;
 }
 .subscribe-para{
-    margin: 40px 20px;
-    padding: 20px;
+    margin: 30px 20px 0 0;
+    padding: 30px 0;
 }
 .subscribe-para h4{
     font: 30px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 42px;
+    margin: 50px 0;
 }
 .subscribe-btn{
-    margin: 30px 20px;
-    padding: 20px;
+    margin: 20px 20px 0 0;
+    padding: 30px 0;
 }
 .subscribe-btn a{
     font: 16px 'montserrat', sans-serif;
@@ -578,7 +575,6 @@ body {
 #counter{
     background-color: #F2F2F2;
     color: #000;
-    border: 1px solid red;
 }
 .row{
     padding: 50px 0;
@@ -719,8 +715,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .faq-lists{
@@ -783,8 +778,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .pricing-charts{
@@ -835,24 +829,30 @@ body {
     background-size: cover;    
     color: #fff;
 }
+.subscribe-para{
+    padding: 10px;
+}
 .subscribe-para h4{
     font: 40px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 56px;
-    margin-top: 30px;
+    margin: 10px 0 20px 0;
 }
 #exampleInputEmail1{
     border: 3px solid #fff;
     border-radius: 20px;
-    padding: 20px;
+    padding: 23px;
     background: transparent;
     color: #fff;
     font-family: 'montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
 }
 #exampleInputEmail1:focus{
     border: 3px solid #2187e7;
+}
+.subscribe-form{
+    padding: 20px;
 }
 .form-group{
     display: flex;
@@ -891,8 +891,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 
@@ -913,8 +912,7 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 200px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .contact-options{
