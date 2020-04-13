@@ -62,7 +62,7 @@ body {
     overflow-x: hidden;
 }
 /***********FIRST BLOCK**********/
-.first-block{
+.hero-section{
     height: 100%;
     position: relative;
     overflow: hidden;

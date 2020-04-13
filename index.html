@@ -13,7 +13,7 @@
 
     <div class="whole-body" id="whole-body">
 
-        <div class="container-fluid first-block">
+        <div class="container-fluid hero-section" id="hero-section">
 
             <nav class="navbar fixed-top navbar-expand-lg">
                 <a class="navbar-brand" href="./index.html">
@@ -40,7 +40,7 @@
                             <a class="nav-link" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     <div class="collnav-inline my-2 my-lg-0">
@@ -262,37 +262,116 @@
                 </div>
             </div>
     
-            <div class="ninth-block">
-    
+            <div class="ninth-block" id="projects-section">
+                <div class="project-header text-center">
+                    <h2>OUR RECENT PROJECTS</h2>
+                </div>
+                <div class="container project-dashboard text-center">
+                    <button type="button" class="projectBtn active" onclick="filterSelection('all')"> ALL PROJECTS </button>
+                    <button type="button" class="projectBtn" onclick="filterSelection('html')"> HTML </button>
+                    <button type="button" class="projectBtn" onclick="filterSelection('css')"> CSS </button>
+                    <button type="button" class="projectBtn" onclick="filterSelection('js')"> JAVACRIPT </button>
+                </div>
+                <div class="container project-grid">
+                    <div class="row project-row-container text-center">
+                    <!-- START GRID -->
+                        <div class="column col-4 html">
+                        <div class="content">
+                            <img src="./images/htmlProject1.jpg">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                        </div>
+                        <div class="column col-4 js">
+                        <div class="content">
+                            <img src="./images/jsProject2.png">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                        <div class="column col-4 html">
+                          <div class="content">
+                            <img src="./images/htmlProject1.jpg">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                    
+                        <div class="column col-4 js">
+                          <div class="content">
+                            <img src="./images/jsProject2.png">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                        <div class="column col-4 css">
+                          <div class="content">
+                            <img src="./images/cssProject2.png">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                        <div class="column col-4 js">
+                          <div class="content">
+                            <img src="./images/jsProject2.png">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                    
+                        <div class="column col-4 css">
+                          <div class="content">
+                            <img src="./images/cssProject2.png">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                        <div class="column col-4 css">
+                          <div class="content">
+                            <img src="./images/cssProject2.png">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                        <div class="column col-4 html">
+                          <div class="content">
+                            <img src="./images/htmlProject1.jpg">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor..</p>
+                          </div>
+                        </div>
+                    <!-- END GRID -->
+                    </div>
+                </div>                
             </div>
     
-            <div class="tenth-section" id="counter">
+            <div class="tenth-section" id="counters">
                 <div class="container row counter-list">
                     <div class="col-2">
                         <div class="counter-box counter-one">
                             <ion-icon name="search-outline"></ion-icon>
-                            <span class="counter-data" data-count-start="0" data-count-end="86" data-speed="10"></span>
+                            <h2 class="counter">100</h2>
                             <p>Team members</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="counter-box counter-two">
                             <ion-icon name="cart-outline"></ion-icon>
-                            <span class="counter-data" data-count-start="0" data-count-end="86" data-speed="10"></span>
+                            <h2 class="counter">100</h2>
                             <p>Purchased</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="counter-box counter-three">
                             <ion-icon name="time-outline"></ion-icon>
-                            <span class="counter-data" data-count-start="0" data-count-end="86" data-speed="10"></span>
+                            <h2 class="counter">100</h2>
                             <p>Hour of work</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="counter-box counter-four">
                             <ion-icon name="cafe-outline"></ion-icon>
-                            <span class="counter-data" data-count-start="0" data-count-end="86" data-speed="10"></span>
+                            <h2 class="counter">100</h2>
                             <p>Cups of coffee</p>
                         </div>
                     </div>
@@ -514,7 +593,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script async src="https://kit.fontawesome.com/5e819a5b07.js"></script>
-    <script src="./js/script.js"></script>
+    <script async src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script async src="./js/script.js"></script>
+    <script async src="./js/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function( $ )
+        {
+            $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+    </script>
 </body>
 </html>
 

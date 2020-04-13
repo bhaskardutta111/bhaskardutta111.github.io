@@ -62,7 +62,7 @@ body {
 }
 
 /***********FIRST BLOCK**********/
-.first-block{
+.hero-section{
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -571,19 +571,77 @@ body {
     border-radius: 30px;
 }
 
+/**********PROJECTS BLOCK**********/
+.project-header{
+    margin: 30px;
+    padding: 20px;    
+}
+.project-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.project-grid img{
+    max-width: 300px;
+    max-height: 200px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.project-dashboard button{
+    font: 25px 'montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px;
+    margin: 0 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+.project-row-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.project-row-container h4{
+    font: 22px 'montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 10px 0;
+}
+.project-row-container p{
+    font: 20px 'raleway', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 10px 0;
+}
+.show{
+    display: block;
+}
+.projectBtn .active{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.projectBtn:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
 /**********COUNTER BLOCK**********/
-#counter{
+#counters{
     background-color: #F2F2F2;
     color: #000;
 }
-.row{
-    padding: 50px 0;
+#counters .row{
+    padding: 10px 0;
     margin: 0 auto;
 }
 .col-2{
     color: #000;
-    margin: 0 30px;
-    padding: 0 20px;
+    margin: 0 40px;
+    padding: 10px 20px;
 }   
 .counter-box ion-icon{
     background-color: #fff;
@@ -597,10 +655,11 @@ body {
     background-color: #3A7BD5;
     color: #fff;
 }
-.counter-data{
-    font-size: 48px 'montserrat', sans-serif;
+.counter-box h2{
+    font: 60px 'montserrat', sans-serif;
     font-weight: 700;
     line-height: 58px;
+    margin: 10px 0;
 }
 
 /**********TESTIMONIALS BLOCK**********/
