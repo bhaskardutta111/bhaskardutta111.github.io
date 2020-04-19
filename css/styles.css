@@ -60,16 +60,38 @@ body {
     position: relative;
     height: 100%;
 }
+#whole-body{
+    position: relative;
+}
+
+.scroll-up-button{
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    background-color: #2187e7;
+    padding: 20px;
+    cursor: pointer;
+}
+.scroll-up-button:hover{
+    padding: 25px;
+    transition: ease 1s;
+}
+.scroll-up-button ion-icon{
+    font: 30px 'montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+}
 
 /***********FIRST BLOCK**********/
-.hero-section{
+#hero-section{
     height: 100%;
     position: relative;
     overflow: hidden;
     background: url(/images/mainBg.jpg);
-}
-.navbar{
-    margin: 10px 0;
 }
 .navbar-brand{
     font: 26px 'raleway', sans-serif;
@@ -85,12 +107,17 @@ body {
 .navbar-nav{
     margin: 0 auto;
 }
+.active{
+    background-color: #3A7BD5;
+}
 .nav-item a{
     color: #fff;
-    margin-right: 10px;
+    margin-right: 30px;
+    padding: 15px 10px;
 }
 .navbar-collapse a:hover{
-    color: #2187e7;
+    color: #fff;
+    background-color: #3A7BD5;
 }
 .collnav-inline h6{
     font: 14px 'montserrat', sans-serif;
@@ -144,15 +171,17 @@ body {
 .smMenu, .closeBtn{
     display: none;
 }
-/**********SEC BLOCK**********/
+/**********INFO BLOCK**********/
+#info{
+    position: relative;
+    padding-top: 50px;
+}
 .sec-block{
     background-color: #F9F9F9;
     position: relative;
 }
-
 .info-header{
-    margin: 30px;
-    padding: 20px;
+    padding: 20px 0;
 }
 .info-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -163,8 +192,9 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px 50px;
+    padding: 20px 0px;
     text-align: center;
+    /* border: 1px solid red; */
 }
 .info-blocks{
     display: flex;
@@ -199,9 +229,6 @@ body {
 }
 
 /**********ABOUT BLOCK**********/
-#about{
-    position: relative;
-}
 .about-header{
     margin: 30px;
     padding: 20px;
@@ -221,10 +248,11 @@ body {
 .about-para-bars{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.who-para, .skills-bars{
-    flex-basis: 50%;
+.who-para{
+    flex-basis: 45%;
+    padding: 10px;
 }
 .who-para h3{
     font-family: montserrat, sans-serif;
@@ -258,74 +286,55 @@ body {
     color: #2187e7;
     border: 2px solid #2187e7;
 }
-.content{
-	width:100%;
-	margin:0;
-	position:relative;
-	float:left;
-	font-size:12px;
-	line-height:2em;
-	padding:30px 0 30px;
+.skills-bars{
+    flex-basis: 45%;
+    padding: 10px;
 }
-#skill { 
-	list-style:none; 
-	padding-top:30px;
-}
-#skill li { 
-	margin-bottom:70px; 
-	background: #EDF4F8; 
-	height: 12px; 
-	border-radius:3px; 
-	border: 1px solid #000; 
-}
-#skill li em { 
-	position:relative; 
-    top:-30px;
+.skillsList {
     font-size: 20px;
-    font-family: 'montserrat', sans-serif;
+    height: auto;
+    position: relative;
+ }
+ .skillbar{
+    height: 40px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 10px auto 50px;
+ }
+ .skillSection {
+    width: 10%;
+    height: 40px;
+    position: relative;
+    background-color: #2187e7;
+}
+.skillLabel{
+    font: 20px 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 30px;
+    color: #fff;
+    padding: 10px 20px;
 }
-
-.expand { 
-	height:10px; 
-	background:#3A7BD5; 
-	position:absolute;
-	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
+.percentText{
+    font: 20px 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
 }
-
-.html       { width:90%; animation:html 2s ease-out;  -moz-animation:html 2s ease-out;       -webkit-animation:html 2s ease-out;       }
-.css        { width:80%; animation:html 2s ease-out;  -moz-animation:css 2s ease-out;        -webkit-animation:css 2s ease-out;        }
-.js      { width:60%; animation:html 2s ease-out;  -moz-animation:js 2s ease-out;      -webkit-animation:js 2s ease-out;      }
-.wp   { width:70%; animation:html 2s ease-out;  -moz-animation:wp 2s ease-out;   -webkit-animation:wp 2s ease-out;   }
-
-@keyframes html       { 0%  { width:0px;} 100%{ width:70%;}  }
-@keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@keyframes js      { 0%  { width:0px;} 100%{ width:50%;}  }
-@keyframes wp   { 0%  { width:0px;} 100%{ width:10%;}  }
-
-@-moz-keyframes html       { 0%  { width:0px;} 100%{ width:70%;}  }
-@-moz-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-moz-keyframes js      { 0%  { width:0px;} 100%{ width:50%;}  }
-@-moz-keyframes wp   { 0%  { width:0px;} 100%{ width:10%;}  }
-
-@-webkit-keyframes html       { 0%  { width:0px;} 100%{ width:70%;}  }
-@-webkit-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-webkit-keyframes js      { 0%  { width:0px;} 100%{ width:50%;}  }
-@-webkit-keyframes wp   { 0%  { width:0px;} 100%{ width:10%;}  }
 
 /**********FEATURES BLOCK**********/
 #features{
     position: relative;
+    padding-top: 50px;
 }
 .features-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 10px 0;
 }
 .features-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .features-header p{
     font: 16px 'Raleway', sans-serif;
@@ -338,11 +347,9 @@ body {
     display: flex;
 }
 .feature-fig{
-    /* border: 1px solid red; */
     flex-basis: 40%;
 }
 .feature-list{
-    /* border: 1px solid red; */
     flex-basis: 30%;
     margin: 0 50px;
 }
@@ -371,46 +378,47 @@ body {
     margin: 5px 0;
 }
 
-/**********MEMBER BLOCK**********/
-#member{
+/**********MEMBER-REVIEW BLOCK**********/
+#member-review{
     background-color: #3A7BD5;
+    color: #fff;
 }
 .member-contents{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 30px 0;
-    margin: 30px 40px 0 30px;
     vertical-align: top; 
 }
-.member-fig{
-    margin: 0 20px 0 100px;
+.member-contents > .member-fig{
+    margin: 10px 0 0 40px;
+    flex-basis: 20%;
+    text-align: center;
 }
 .member-fig img{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    flex-basis: 20%;
 }
 .member-name-dsgn{
+    margin-top: 10px;
     flex-basis: 20%;
-    margin: 0 50px;
+    padding: 30px 0;
 }
 .member-name-dsgn h3{
     font: 24px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 34px;
-    padding: 20px 0;
 }
 .member-name-dsgn p{
     font: 20px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 30px;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 .line{
-    height: 150px;
+    height: 160px;
     border-left: 5px solid;
-    margin: 0 70px;
 }
 .member-quote{
     flex-basis: 40%;
@@ -419,7 +427,7 @@ body {
     font: 16px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 /**********RANDOM BLOCK**********/
@@ -466,7 +474,7 @@ body {
     font-weight: 500;
 }
 
-/**********MEMBERS BLOCK**********/
+/**********TEAM BLOCK**********/
 #team{
     position: relative;
 }
@@ -498,7 +506,7 @@ body {
     flex-wrap: wrap;
 }
 .member-socials{
-    flex-basis: 20%;
+    flex-basis: 10%;
 }
 .member-descrp{
     flex-basis: 70%;
@@ -539,14 +547,14 @@ body {
     padding: 20px 0;
 }
 .subscribe-para{
-    margin: 30px 20px 0 0;
-    padding: 30px 0;
+    margin: 20px 20px 0 0;
+    padding: 10px 0;
 }
 .subscribe-para h4{
     font: 30px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 42px;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .subscribe-btn{
     margin: 20px 20px 0 0;
@@ -591,7 +599,7 @@ body {
     font-weight: 500;
     line-height: 24px;
     padding: 10px;
-    margin: 0 10px;
+    margin: 20px 10px;
     background: none;
     border: none;
     outline: none;
@@ -600,6 +608,7 @@ body {
     float: left;
     width: 33.33%;
     display: none;
+    margin: 5px 0 10px 0;
 }
 .project-row-container:after {
     content: "";
@@ -629,42 +638,54 @@ body {
     text-decoration: underline;
     font-weight: 700;
 }
+
 /**********COUNTER BLOCK**********/
 #counters{
     background-color: #F2F2F2;
     color: #000;
+    padding: 20px 0;
 }
 #counters .row{
-    padding: 10px 0;
+    padding: 20px 0;
     margin: 0 auto;
 }
 .col-2{
     color: #000;
-    margin: 0 40px;
-    padding: 10px 20px;
+    margin: 0 auto;
+    padding: 30px 0;
 }   
 .counter-box ion-icon{
     background-color: #fff;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 24px;
     border-radius: 50%;
-    padding: 30px;
+    padding: 20px;
+    color: #2187e7;
+    position: absolute;
+    left: 0;
 }
 .counter-box ion-icon:hover{
     background-color: #3A7BD5;
     color: #fff;
 }
-.counter-box h2{
-    font: 60px 'montserrat', sans-serif;
-    font-weight: 700;
+.counter{
+    font: 50px 'raleway', sans-serif;
+    font-weight: 800;
     line-height: 58px;
-    margin: 10px 0;
+    margin: 0 80px;
+}
+.counter-box p{
+    font: 18px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 22px;    
+    margin: 15px 0 0 0;
 }
 
 /**********TESTIMONIALS BLOCK**********/
 #testimonial{
     position: relative;
+    padding-top: 50px;
     background: url("/images/testimonBg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -674,15 +695,15 @@ body {
     border: 1px solid #fff;
 }
 .testimonial-header{
-    margin: 30px;
-    padding: 20px;    
+    margin: 10px 0;
+    padding: 10px 0;    
 }
 .testimonial-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
-.slide{
+.slidee{
     display: none;
 }
 .slide-content {
@@ -697,7 +718,7 @@ body {
     flex-basis: 70%;
     margin: 20px 0;   
 }
-.slide img{
+.slidee img{
     width: 100%;
     height: auto;
     max-width: 100px;
@@ -705,13 +726,13 @@ body {
     border-radius: 50%;
     margin: 10px 0;
 }
-.slide h5{
+.slidee h5{
     font: 18px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 22px;
     margin: 10px 0;
 }
-.slide p{
+.slidee p{
     font: 16px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
@@ -737,8 +758,8 @@ body {
   transition: background-color 0.6s ease;
   border: 2px solid #fff;
 }
-.active, .dot:hover {
-    background-color: #717171;
+.on, .dot:hover {
+    background-color: #222;
 }
 .fade {
     -webkit-animation-name: fade;
@@ -823,15 +844,15 @@ body {
 /**********PRCING BLOCK**********/
 #pricing{
     position: relative;
+    padding-top: 50px;
 }
 .pricing-header{
-    margin: 30px;
-    padding: 20px;
+    padding: 20px 0;
 }
 .pricing-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .pricing-header p{
     font: 16px 'Raleway', sans-serif;
@@ -888,14 +909,14 @@ body {
     background-size: cover;    
     color: #fff;
 }
-.subscribe-para{
-    padding: 10px;
+.subscribe-pr{
+    padding: 20px 0;
 }
-.subscribe-para h4{
+.subscribe-pr h4{
     font: 40px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 56px;
-    margin: 10px 0 20px 0;
+    margin: 30px 0 20px 0;
 }
 #exampleInputEmail1{
     border: 3px solid #fff;
@@ -911,7 +932,7 @@ body {
     border: 3px solid #2187e7;
 }
 .subscribe-form{
-    padding: 20px;
+    padding: 50px 0;
 }
 .form-group{
     display: flex;
@@ -938,8 +959,7 @@ body {
 
 /**********PARTNERS BLOCK**********/
 .partners-header{
-    margin: 30px;
-    padding: 20px;
+    padding-top: 20px;
 }
 .partners-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -953,19 +973,32 @@ body {
     padding: 10px 50px;
     text-align: center;
 }
+.partners-list{
+    padding: 50px 0;
+}
+.customer-logos img{
+    margin: 10px 30px;
+    opacity: 0.3;
+}
+.customer-logos img:hover{
+    margin: 10px 30px;
+    opacity: 0.9;
+}
 
 /**********CONTACT BLOCK**********/
 #contact{
     position: relative;
+    padding-top: 50px;
+    background-color: #F2F2F2;
 }
 .contact-header{
-    margin: 30px;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
 }
 .contact-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .contact-header p{
     font: 16px 'Raleway', sans-serif;
@@ -994,5 +1027,93 @@ body {
 .contact p{
     margin: 10px 0;
 }
+.contact-form{
+    padding: 40px 0;
+}
+.input-sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec-one{
+    flex-basis: 50%;
+}
+.sec-two{
+    flex-basis: 40%;
+}
+.sec-one input, .sec-two textarea{
+    margin: 20px 0;
+}
+.form-group input{
+    border-radius: 20px;
+}
+.form-group textarea{
+    font: 18px 'raleway',sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 20px;
+}
+.form-control:hover{
+    border: 2px solid #2187e7;
+}
+.contact-form .btn{
+    background-color: #2187e7;
+    border: none;
+    border-radius: 20px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #fff;
+    padding: 20px;
+}
+.contact-form .btn:hover{
+    background-color: #fff;
+    color: #2187e7;
+    border: 2px solid #2187e7;
+}
 
+/**********FOOTER BLOCK**********/
+#footer{
+    background-color: #222;
+    padding: 20px;
+}
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.foot{
+    flex-basis: 30%;
+}
+.foot .col{
+    margin: 20px 0;
+    font: 20px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+.foot a{
+    color: #fff;    
+}
+.foot a:hover{
+    color: #2187e7;
+}
+.md-section a{
+    margin-top: 20px;
+}
+.socials{
+    text-align: end;
+    margin: 10px 0;
+}
+.social-icons ion-icon{
+    margin: 0 20px;
+    font: 25px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+.copyright{
+    color: #fff;
+    text-align: end;
+}
 }

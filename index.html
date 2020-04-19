@@ -4,74 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revity - HTML/CSS/JS Responsive Template</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/smStyles.css">
+    <link rel="stylesheet" href="./css/allStyles.css">
+    <link rel="stylesheet" href="./css/infinite-slider.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
+    <!-- <div class="lds-ripple"><div></div><div></div>
+    </div> -->
 
     <div class="whole-body" id="whole-body">
+        
+            <div class="scroll-up-button" onclick="scrollToTop()">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </div>
 
-        <div class="container-fluid hero-section" id="hero-section">
-
-            <nav class="navbar fixed-top navbar-expand-lg">
-                <a class="navbar-brand" href="./index.html">
-                <img src="./images/logo1.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                REVITY</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <ion-icon name="menu-outline" class="smMenu"></ion-icon>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#whole-body">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#info">Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Testimonial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="collnav-inline my-2 my-lg-0">
-                        <h6>CALL US NOW</h6>
-                        <a href="tel:+00123456789">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <h5>+00 123456789</h5>
-                        </a>
+            <div class="container-fluid hero-section" id="hero-section">                
+                <nav class="navbar fixed-top navbar-expand-lg">
+                    <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    REVITY</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <ion-icon name="menu-outline" class="smMenu"></ion-icon>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#whole-body">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#info">Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonial">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="collnav-inline my-2 my-lg-0">
+                            <h6>CALL US NOW</h6>
+                            <a href="tel:+00123456789">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <h5>+00 123456789</h5>
+                            </a>
+                        </div>
+                    </div>
+                </nav>         
+                <div class="header-text">
+                    <div class="container header-info">
+                        <h3>MEET US</h3>
+                        <h1 class="display-4">PROFESSIONALS AND GREAT DEVELOPERS</h1>
                     </div>
                 </div>
-            </nav>         
-            <div class="header-text">
-                <div class="container header-info">
-                    <h3>MEET US</h3>
-                    <h1 class="display-4">PROFESSIONALS AND GREAT DEVELOPERS</h1>
+                <div class="container cta-buttons">
+                    <button type="button" class="btn btn-primary btn-lg ctaBtn">BUY TEMPLATE
+                        <ion-icon name="cart-outline"></ion-icon></button>
+                    <button type="button" class="btn btn-secondary btn-lg">LEARN MORE
+                        <ion-icon name="chevron-down-outline"></ion-icon></button>
                 </div>
             </div>
-            <div class="container cta-buttons">
-                <button type="button" class="btn btn-primary btn-lg ctaBtn">BUY TEMPLATE
-                    <ion-icon name="cart-outline"></ion-icon></button>
-                <button type="button" class="btn btn-secondary btn-lg">LEARN MORE
-                    <ion-icon name="chevron-down-outline"></ion-icon></button>
-            </div>
-                <!-- <div class="scroll-down-button">
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </div> -->
-        </div>
 
             <div class="sec-block" id="info">
-                <div class="info-header">
-                    <h2 class=" text-center">WHY CHOOSE US</h2>
+                <div class="container info-header">
+                    <h2 class="text-center">WHY CHOOSE US</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore commodi ad reiciendis nemo repellendus? Laboriosam quisquam molestias totam rem quod velit exercitationem doloremque aliquid blanditiis ipsam? Est, deleniti error! Magni!</p>
                 </div>
                 <div class="container info-blocks">
@@ -111,18 +115,30 @@
                         <a href=""><button type="button" id="button">LEARN MORE</button></a>
                     </div>
                     <div class="skills-bars">
-                        <div class="content">
-                            <div class="col">
-                                <ul id="skill">
-                                    <li><span class="expand html"></span>
-                                    <em>HTML5</em></li>
-                                    <li><span class="expand css"></span>
-                                    <em>CSS3</em></li>
-                                    <li><span class="expand js"></span>
-                                    <em>Javascript</em></li>
-                                    <li><span class="expand wp"></span>
-                                    <em>Wordpress</em></li>                                    
-                                </ul>
+                        <div class="skillsList">
+                            <div class="skillbar">
+                                <div class="skillSection skillHtml"> 
+                                    <span class="skillLabel ">HTML</span>
+                                    <span class="percentText">95%</span>
+                                </div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillSection skillCss">
+                                    <span class="skillLabel ">CSS/CSS3</span>
+                                    <span class="percentText">90%</span>
+                                </div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillSection skillJs">
+                                    <span class="skillLabel ">Javascript</span>
+                                    <span class="percentText">75%</span>
+                                </div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillSection skillWp">
+                                    <span class="skillLabel ">Wordpress</span>
+                                    <span class="percentText">85%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,10 +174,10 @@
                 </div>
             </div>
     
-            <div class="container-fluid fifth-block" id="member">
-                <div class="member-contents">
+            <div class="container-fluid fifth-block" id="member-review">
+                <div class="container member-contents">
                     <div class="member-fig">
-                        <img src="./images/fig.png" alt="">
+                        <img src="./images/avatarM-min.jpg" alt="">
                     </div>
                     <div class="member-name-dsgn">
                         <h3>Member Name</h3>
@@ -214,7 +230,7 @@
                         </div>
                         <div class="member-descrp">
                             <div class="member-fig">
-                                <img src="./images/fig.png" alt="">
+                                <img src="./images/avatarM-min.jpg" alt="">
                             </div>
                                 <h4>Member One</h4>
                                 <p>Member Desgn.</p>
@@ -229,7 +245,7 @@
                         </div>
                         <div class="member-descrp">
                             <div class="member-fig">
-                                <img src="./images/fig.png" alt="">
+                                <img src="./images/avatarF-min.jpg" alt="">
                             </div>
                                 <h4>Member Two</h4>
                                 <p>MemberDesgn.</p>
@@ -244,7 +260,7 @@
                         </div>
                         <div class="member-descrp">
                             <div class="member-fig">
-                                <img src="./images/fig.png" alt="">
+                                <img src="./images/avatarF-min.jpg" alt="">
                             </div>
                                 <h4>Member Three</h4>
                                 <p>Member Desgn.</p>
@@ -267,20 +283,20 @@
                     <h2>OUR RECENT PROJECTS</h2>
                 </div>
                 <div class="container project-dashboard text-center">
-                    <button type="button" class="projectBtn active" onclick="filterSelection('all')"> ALL PROJECTS </button>
-                    <button type="button" class="projectBtn" onclick="filterSelection('html')"> HTML </button>
-                    <button type="button" class="projectBtn" onclick="filterSelection('css')"> CSS </button>
-                    <button type="button" class="projectBtn" onclick="filterSelection('js')"> JAVACRIPT </button>
+                    <button type="button" class="projectBtn active" onclick="projectSelect('all')"> ALL PROJECTS </button>
+                    <button type="button" class="projectBtn" onclick="projectSelect('html')"> HTML </button>
+                    <button type="button" class="projectBtn" onclick="projectSelect('css')"> CSS </button>
+                    <button type="button" class="projectBtn" onclick="projectSelect('js')"> JAVASCRIPT </button>
                 </div>
                 <div class="container project-grid">
                     <div class="row project-row-container text-center">
                     <!-- START GRID -->
                         <div class="column col-4 html">
-                        <div class="content">
-                            <img src="./images/htmlProject1.jpg">
-                            <h4>Project Title</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
+                            <div class="content">
+                                <img src="./images/htmlProject1.jpg">
+                                <h4>Project Title</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
                         </div>
                         <div class="column col-4 js">
                         <div class="content">
@@ -350,28 +366,28 @@
                     <div class="col-2">
                         <div class="counter-box counter-one">
                             <ion-icon name="search-outline"></ion-icon>
-                            <h2 class="counter">100</h2>
+                            <span class="counter">86</span>
                             <p>Team members</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="counter-box counter-two">
                             <ion-icon name="cart-outline"></ion-icon>
-                            <h2 class="counter">100</h2>
+                            <span class="counter">170</span>
                             <p>Purchased</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="counter-box counter-three">
                             <ion-icon name="time-outline"></ion-icon>
-                            <h2 class="counter">100</h2>
+                            <span class="counter">456</span>
                             <p>Hour of work</p>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="counter-box counter-four">
                             <ion-icon name="cafe-outline"></ion-icon>
-                            <h2 class="counter">100</h2>
+                            <span class="counter">69</span>
                             <p>Cups of coffee</p>
                         </div>
                     </div>
@@ -384,10 +400,10 @@
                 </div>
                 <div class="testimonial-slideshow">
                     <div class="slide-container">
-                        <div class="slide fade">
+                        <div class="slidee fade">
                             <div class="slide-content">
                                 <div class="client-fig-name text-center">
-                                    <img src="./images/fig.png" alt="">
+                                    <img src="./images/avatarF-min.jpg" alt="">
                                     <h5>Client name one</h5>
                                     <p>Client desgn</p>
                                 </div>
@@ -396,10 +412,10 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="slide fade">
+                        <div class="slidee fade">
                             <div class="slide-content">
                                 <div class="client-fig-name text-center">
-                                    <img src="./images/fig.png" alt="">
+                                    <img src="./images/avatarM-min.jpg" alt="">
                                     <h5>Client name two</h5>
                                     <p>Client desgn</p>
                                 </div>
@@ -408,10 +424,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide fade">
+                        <div class="slidee fade">
                             <div class="slide-content">
                                 <div class="client-fig-name text-center">
-                                    <img src="./images/fig.png" alt="">
+                                    <img src="./images/avatarF-min.jpg" alt="">
                                     <h5>Client name three</h5>
                                     <p>Client desgn</p>
                                 </div>
@@ -480,7 +496,7 @@
             </div>
     
             <div class="pricing-section" id="pricing">
-                <div class="pricing-header text-center">
+                <div class="container pricing-header text-center">
                     <h2>PRICING PLANS</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto delectus dolorum illum consequatur tempora? Quasi vero doloremque reprehenderit! Accusamus molestiae optio alias rerum minus atque animi debitis eveniet autem nisi.</p>
                 </div>
@@ -534,7 +550,7 @@
             </div>
     
             <div class="subscribe-section-two">
-                <div class="subscribe-para text-center">
+                <div class="subscribe-pr text-center">
                     <h4>SUBSCRIBE TO OUR NEWSLETTER TO BE IN TOUCH</h4>
                 </div>
                 <div class="container subscribe-form">
@@ -548,13 +564,20 @@
             </div>
     
             <div class="partners-section">
-                <div class="partners-header text-center">
+                <div class="container partners-header text-center">
                     <h2>OUR PARTNERS</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam hic in, doloribus, odit ea sed nostrum iure ut ipsa atque reprehenderit, corporis laudantium nobis. Sed vero aperiam temporibus quos.</p>
                 </div>
-                <div class="partners-list">
-                    <div class="partner-logos">
-                        <img src="" alt="">
+                <div class="container partners-list">
+                    <div class="customer-logos slider">
+                        <div class="slide"><img src="./images/logo1.png" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo2.jpg" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo3.webp" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo4.jpg" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo2.jpg" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo3.webp" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo4.JPG" alt="" width="150px" height="50px"></div>
+                        <div class="slide"><img src="./images/logo2.jpg" alt="" width="150px" height="50px"></div>
                     </div>
                 </div>
             </div>
@@ -584,6 +607,74 @@
                         <p>help@example.com</p>
                     </div>
                 </div>
+                <div class="container contact-form">
+                    <form>
+                        <div class="input-sections">
+                            <div class="sec-one">
+                                <div class="form-group col-md-10">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Full name">
+                                </div>
+                                <div class="form-group col-md-10">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Your email">
+                                </div>
+                                <div class="form-group col-md-10">
+                                    <input type="number" class="form-control form-control-lg" placeholder="Your number">
+                                </div>
+                            </div>
+                            <div class="sec-two">
+                                <div class="form-group col-md-10">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Your message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center submitRow">
+                            <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer" id="footer">
+                <div class="container footer-section">
+                    <div class="foot lft-section">
+                        <div class="row">
+                            <div class="col"><a href="#">About</a></div>
+                            <div class="col"><a href="#">Contact</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">FAQs</a></div>
+                            <div class="col"><a href="#">Testimonials</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">Projects</a></div>
+                            <div class="col"><a href="#">Pricing</a></div>
+                        </div>
+                    </div>
+                    <div class="foot md-section text-center">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./images/logo1.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                            REVITY</a>
+                    </div>
+                    <div class="foot rgt-section">
+                        <div class="more-links">
+                            <div class="row">
+                                <div class="col"><a href="#">Link1</a></div>
+                                <div class="col"><a href="#">Link2</a></div>
+                                <div class="col"><a href="#">Link3</a></div>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <div class="social-icons">
+                                <a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="http://pinterest.com"><ion-icon name="logo-pinterest"></ion-icon></a>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>© All rigths reserved 2017.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
     </div>
@@ -591,21 +682,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script async src="https://kit.fontawesome.com/5e819a5b07.js"></script>
-    <script async src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script async src="./js/script.js"></script>
-    <script async src="./js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5e819a5b07.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
     <script>
-        jQuery(document).ready(function( $ )
-        {
+        jQuery(document).ready(function(){
             $('.counter').counterUp({
-            delay: 10,
-            time: 1000
+                delay: 10,
+                time: 1000
         });
-    });
+        });
     </script>
 </body>
 </html>
 
-<!-- <ion-icon name="caret-down-outline"></ion-icon> -->
