@@ -957,9 +957,90 @@ body {
     border: 3px solid #2187e7;
 }
 
+/**********BLOGS BLOCK**********/
+.blogs-header{
+    padding-top: 20px;
+}
+.blogs-header h2{
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.blogs-header p{
+    font: 16px 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+}
+.blog-container{
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.blog{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);    
+    border: none;
+    outline: none;
+}
+.blog p{
+    margin: 30px 0;
+}
+.blog-category{
+    margin: 15px 10px;
+    font: 16px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+.blog-category a:hover{
+    color: #333;
+}
+.blog-upload-details{
+    margin: 15px 10px;
+    font: 14px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+.blog ion-icon{
+    color: #3A7BD5;
+    vertical-align: middle;
+}
+.blog-upload-details a{
+    margin-right: 10px;
+}
+.blog h2{
+    margin: 15px 10px;
+    font: 24px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 34px;
+}
+.blog-para{
+    margin: 15px 10px;
+    font: 16px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+.blog-read-btn{
+    background-color: #2187e7;
+    outline: none;
+    border: 2px solid #fff; 
+    margin: 0 0 10px 10px;
+    border-radius: 20px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    padding: 15px;
+}
+.blog-read-btn:hover{
+    background-color: #fff;
+    color: #2187e7;
+    border: 2px solid #2187e7;
+}
 /**********PARTNERS BLOCK**********/
 .partners-header{
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .partners-header h2{
     font: 40px 'Montserrat', sans-serif;
