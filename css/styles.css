@@ -72,12 +72,12 @@ body {
     right: 50px;
     z-index: 99;
     background-color: #2187e7;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
 }
 .scroll-up-button:hover{
-    padding: 25px;
-    transition: ease 1s;
+    padding: 20px;
+    transition: ease 0.5s;
 }
 .scroll-up-button ion-icon{
     font: 30px 'montserrat', sans-serif;
