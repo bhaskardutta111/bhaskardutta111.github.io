@@ -1,8 +1,6 @@
-@media only screen and (min-width: 501px) {
-
     /* http://meyerweb.com/eric/tools/css/reset/ 
-       v2.0 | 20110126
-       License: none (public domain)
+    v2.0 | 20110126
+    License: none (public domain)
     */
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,6 +46,10 @@
         border-spacing: 0;
     }   
 /***********RESET ENDS**********/
+
+
+@media only screen and (min-width: 501px) {
+
 *{
     box-sizing: border-box;
 }
@@ -279,4 +281,282 @@ body {
     margin: 50px 0;
 
 }
+.footer{
+    display: none;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+*{
+    box-sizing: border-box;
+}
+body {
+    font: 18px 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+#whole-body{
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.scroll-up-button{
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    background-color: #2187e7;
+    padding: 10px;
+    cursor: pointer;
+}
+.scroll-up-button:active{
+    padding: 20px;
+    transition: ease 0.5s;
+}
+.scroll-up-button ion-icon{
+    font: 30px 'montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+}
+
+/***********FIRST BLOCK**********/
+.hero-section{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(/images/blogBg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.navbar-brand{
+    font: 26px 'raleway', sans-serif;
+    font-weight: 700;
+    line-height: 24px;   
+}
+.smMenu{
+    font-weight: 400;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    min-width: 50px;
+    min-height: 50px;
+}
+.smMenu:active{
+    border: none;
+    outline: none;
+}
+.navbar-collapse{
+    background: #333;
+}
+.navbar-collapse ul li{
+    font: 20px 'raleway', sans-serif;
+    font-weight: 900;
+    line-height: 24px;  
+}
+.nav-item a{
+    padding: 8px 8px 8px 20px;
+    margin: 10px 0 0 10px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+.navbar-collapse a:active{
+    color: #2187e7;
+}
+.collnav-inline a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+.collnav-inline h6{
+    font: 18px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 16px;  
+    margin: 10px;
+    color: #fff;
+}
+.collnav-inline h5{
+    font: 25px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    display: inline-block;  
+}
+.collnav-inline ion-icon{
+    font: 20px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 30px;    
+}
+.header-text{
+    margin: 100px 0 70px 0;
+    color: #fff;
+}
+.header-text h1{
+    font: 40px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 60px;   
+}
+.header-text h3{
+    font: 16px 'arial', sans-serif;
+    font-weight: 400;
+    line-height: 26px;   
+}
+.breadcrumb{
+    background: none;
+}
+.breadcrumb li a{
+    font: 18px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;       
+}
+.breadcrumb li a:active{
+    text-decoration: none;
+}
+
+/***********BLOG SECTION**********/
+.blog-section{
+    padding: 10px 0;
+}
+.blog{
+    margin: 20px 20px 10px 10px;  
+}
+.blog-title a{
+    font: 21px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333;
+}
+.blog-title a:active{
+    text-decoration: none;
+    color: #2187e7;
+}
+.blog-upload-details p{
+    font: 14px 'raleway', sans-serif;
+    font-weight: 600;
+    line-height:24px;
+    padding: 20px 0;
+}
+.blog-read-btn{
+    background-color: #2187e7;
+    outline: none;
+    border: 2px solid #fff; 
+    margin: 15px 0;
+    border-radius: 20px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    padding: 15px;
+}
+.blog-read-btn:hover{
+    background-color: #fff;
+    color: #2187e7;
+    border: 2px solid #2187e7;
+}
+.blog img{
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    height: auto;
+    margin: 15px 0;
+}
+.blogs-menu{
+    margin: 10px;
+}
+.blogs-menu a{
+    color: #333;
+    padding: 20px;
+    font: 16px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 15px 0;
+}
+.blogs-menu a:hover{
+    text-decoration: none;
+    color: #3A7BD5;
+}
+.menu-sec{
+    margin: 15px 10px;
+}
+.menu-sec ul li{
+    font: 16px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 10px;
+}
+#blog-search{
+    padding: 7px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #000;
+    background-color: #F5F5F5;
+}
+.srch-btn{
+    background-color: #2187e7;
+    outline: none;
+    border: none; 
+    margin: 10px 0;
+    font: 16px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: #fff;
+    padding: 10px;
+}
+.recent-header h3{
+    font: 24px 'montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 34px;
+    margin: 20px 0;
+}
+
+/**********FOOTER BLOCK**********/
+#footer{
+    background-color: #222;
+    padding: 20px 0;
+}
+.foot{
+    margin: 20px 0;
+}
+.foot .col{
+    margin: 20px;
+    font: 20px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+.foot a{
+    color: #fff;    
+}
+.foot a:active{
+    color: #2187e7;
+}
+.md-section a{
+    margin-top: 20px;
+}
+.socials{
+    text-align: center;
+    margin: 20px 0;
+}
+.social-icons ion-icon{
+    margin: 20px 30px;
+    font: 25px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+.copyright{
+    color: #fff;
+    text-align: center;
+}
+
 }

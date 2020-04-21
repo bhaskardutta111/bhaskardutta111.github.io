@@ -102,6 +102,7 @@ body {
 .smMenu{
     font-weight: 400;
     background: none;
+    border: none;
     outline: none;
     color: #fff;
     min-width: 50px;
@@ -1099,6 +1100,7 @@ body {
     color: #fff;
     text-align: center;
 }
+
 }
 
 
