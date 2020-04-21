@@ -227,6 +227,15 @@ body {
     line-height: 24px;
     padding: 15px 0;
 }
+.menu-sec{
+    margin: 15px 10px;
+}
+.menu-sec ul li{
+    font: 16px 'raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 10px;
+}
 .blogs-menu a:hover{
     text-decoration: none;
     color: #3A7BD5;
@@ -253,33 +262,11 @@ body {
     color: #fff;
     padding: 10px;
 }
-.recent-posts a{
-    /* font: 16px 'raleway', sans-serif;
-    font-weight: 400;
-    line-height: 24px; */
-    padding: 10px 0;
-}
 .recent-header h3{
     font: 24px 'montserrat', sans-serif;
     font-weight: 500;
     line-height: 34px;
     margin: 20px 0;
-}
-.recent-comments{
-    margin: 50px 0;
-
-}
-.archives{
-    margin: 50px 0;
-    
-}
-.categories{
-    margin: 50px 0;
-
-}
-.meta{
-    margin: 50px 0;
-
 }
 .footer{
     display: none;
