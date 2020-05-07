@@ -1,5 +1,6 @@
-@media only screen and (max-width: 500px) {
-    /* http://meyerweb.com/eric/tools/css/reset/ 
+@media only screen and (min-width: 501px) {
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -47,8 +48,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/***********RESET ENDS**********/
 
+/***********RESET ENDS**********/
 *{
     box-sizing: border-box;
 }
@@ -62,23 +63,23 @@ body {
     scroll-behavior: smooth;
 }
 #whole-body{
-    overflow-x: hidden;
     position: relative;
-    scroll-behavior: smooth;
 }
+
 .scroll-up-button{
     border-radius: 50%;
     display: none;
     position: fixed;
     bottom: 50px;
-    right: 30px;
+    right: 50px;
     z-index: 99;
     background-color: #2187e7;
     padding: 10px;
+    cursor: pointer;
 }
-.scroll-up-button:active{
-    padding: 25px;
-    transition: ease 1s;
+.scroll-up-button:hover{
+    padding: 20px;
+    transition: ease 0.5s;
 }
 .scroll-up-button ion-icon{
     font: 30px 'montserrat', sans-serif;
@@ -87,130 +88,130 @@ body {
     color: #fff;
 }
 
-
 /***********FIRST BLOCK**********/
-.hero-section{
+#hero-section{
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: url(/images/testimonBg.jpg);
+    background: url(/images/mainBg.jpg);
 }
 .navbar-brand{
     font: 26px 'raleway', sans-serif;
     font-weight: 700;
     line-height: 24px;   
-}
-.smMenu{
-    font-weight: 400;
-    background: none;
-    border: none;
-    outline: none;
     color: #fff;
-    min-width: 50px;
-    min-height: 50px;
-}
-.smMenu:active{
-    border: none;
-    outline: none;
-}
-.navbar-collapse{
-    background: #333;
 }
 .navbar-collapse ul li{
     font: 20px 'raleway', sans-serif;
     font-weight: 900;
     line-height: 24px;  
 }
+.navbar-nav{
+    margin: 0 auto;
+}
+.active{
+    background-color: #3A7BD5;
+}
 .nav-item a{
-    padding: 8px 8px 8px 20px;
-    margin: 10px 0 0 10px;
-    text-decoration: none;
-    display: block;
     color: #fff;
+    margin-right: 30px;
+    padding: 15px 10px;
 }
-.navbar-collapse a:active{
-    color: #2187e7;
-}
-.collnav-inline a{
-    text-decoration: none;
+.navbar-collapse a:hover{
     color: #fff;
-    margin: 10px;
+    background-color: #3A7BD5;
 }
 .collnav-inline h6{
-    font: 18px 'montserrat', sans-serif;
+    font: 14px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 16px;  
-    margin: 10px;
     color: #fff;
 }
-.collnav-inline h5{
-    font: 25px 'raleway', sans-serif;
+.collnav-inline a{
+    color: #fff;
+    text-decoration: none;
+}
+.collnav-inline h5, ion-icon{
+    font: 20px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 30px;
     display: inline-block;  
 }
-.collnav-inline ion-icon{
-    font: 20px 'raleway', sans-serif;
-    font-weight: 400;
-    line-height: 30px;    
-}
 .header-text{
-    margin: 70px 0 30px 0;
-    padding: 0 10px 0 0;
+    margin: 220px 0 200px 0;
+    background: transparent;
+}
+.header-text h1{
+    font: 70px 'montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 70px;   
     color: #fff;
 }
 .header-text h3{
-    font: 30px 'montserrat', sans-serif;
+    font: 40px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 56px;   
+    color: #fff;
 }
-.header-text h1{
-    font: 34px 'montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 70px;
+.header-info{
+    color: #2187e7;
 }
 .cta-buttons{
-    margin: 20px auto;
+    margin: 50px auto;
 }
 .cta-buttons button{
-    font: 20px 'montserrat', sans-serif;
+    font: 16px 'montserrat', sans-serif;
     font-weight: 700;
     line-height: 16px;
-    margin: 10px;
-    padding: 20px 20px;
+    margin: 0 10px;
+    padding: 15px;
     background: transparent;
     border-radius: 30px;
     border: 2px solid #fff;
     color: #fff;
 }
-
+.smMenu, .closeBtn{
+    display: none;
+}
 /**********INFO BLOCK**********/
+#info{
+    position: relative;
+    padding-top: 50px;
+}
 .sec-block{
     background-color: #F9F9F9;
     position: relative;
 }
 .info-header{
-    padding: 20px;
+    padding: 20px 0;
 }
 .info-header h2{
-    font: 30px 'Montserrat', sans-serif;
+    font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 20px 0;
 }
 .info-header p{
-    font: 20px 'Raleway', sans-serif;
+    font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 20px 0px;
     text-align: center;
 }
+.info-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.info-block{
+    flex-basis: 25%;
+    padding: 20px;
+}
 .info-block ion-icon{
-    font-size: 50px;
+    font-size: 60px;
     background-color: #3A7BD5;
     color: #fff;
     border: 1px solid;
     padding: 10px;
-    margin: 10px 0;
     border-radius: 50%;
 }
 .info-block h3{
@@ -229,12 +230,9 @@ body {
 }
 
 /**********ABOUT BLOCK**********/
-#about{
-    position: relative;
-}
 .about-header{
-    margin: 30px 0;
-    padding: 20px 0;
+    margin: 30px;
+    padding: 20px;
 }
 .about-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -245,18 +243,25 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 0 10px;
-    margin: 30px 0;
+    padding: 10px 50px;
     text-align: center;
+}
+.about-para-bars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.who-para{
+    flex-basis: 45%;
+    padding: 10px;
 }
 .who-para h3{
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
-    color: #333;
-    margin-bottom: 10px 0;
-    text-align: center;
+    color: #333333;
+    margin-bottom: 10px;
 }
 .who-para p{   
     font-family: raleway, sans-serif;
@@ -265,7 +270,6 @@ body {
     line-height: 24px;
     color: #222222;
     margin: 20px 0;
-    text-align: center;
 }
 #button{
     background-color: #2187e7;
@@ -276,15 +280,15 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #fff;
-    margin: 10px 0 50px 0;
-    padding: 20px;
+    padding: 15px;
 }
-#button:active{
+#button:hover{
     background-color: #fff;
     color: #2187e7;
     border: 2px solid #2187e7;
 }
 .skills-bars{
+    flex-basis: 45%;
     padding: 10px;
 }
 .skillsList {
@@ -319,38 +323,40 @@ body {
     right: 0;
 }
 
-
 /**********FEATURES BLOCK**********/
 #features{
     position: relative;
+    padding-top: 50px;
 }
 .features-header{
     margin: 20px 0;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .features-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .features-header p{
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px;
+    padding: 10px 50px;
     text-align: center;
 }
-.feature-fig img{
-    width: 100%;
-    max-width: 350px;
-    max-height: 300px;
-    height: auto;
+.features-fig-list{
+    display: flex;
+}
+.feature-fig{
+    flex-basis: 40%;
 }
 .feature-list{
-    text-align: center;
+    flex-basis: 30%;
+    margin: 0 50px;
 }
 .feature-list ion-icon{
     font-size: 40px;
+    font-weight: 700;
     display: inline-block;
     color: #3A7BD5;
     vertical-align: middle;
@@ -360,10 +366,10 @@ body {
     font-weight: 600;
     line-height: 30px;
     color: #333;
-    padding-left: 10px;
+    padding-left: 20px;
     vertical-align: middle;
 }
-.feat{
+.feat-three, .feat-two{
     margin: 40px 0;
 }
 .feat p{
@@ -371,55 +377,83 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: #222;
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
-/**********MEMBER REVIEW BLOCK**********/
+/**********MEMBER-REVIEW BLOCK**********/
 #member-review{
     background-color: #3A7BD5;
     color: #fff;
 }
 .member-contents{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 30px 0;
+    vertical-align: top; 
+}
+.member-contents > .member-fig{
+    margin: 10px 0 0 40px;
+    flex-basis: 20%;
+    text-align: center;
 }
 .member-fig img{
-    width: 100%;
-    height: auto;
-    max-width: 150px;
-    max-height: 150px;
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.member-name-dsgn{
+    margin-top: 10px;
+    flex-basis: 20%;
+    padding: 30px 0;
 }
 .member-name-dsgn h3{
     font: 24px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 34px;
-    padding: 30px 0;
 }
 .member-name-dsgn p{
     font: 20px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
+}
+.line{
+    height: 160px;
+    border-left: 5px solid;
+}
+.member-quote{
+    flex-basis: 40%;
 }
 .member-quote p{
     font: 16px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 20px;
+    padding: 30px 0;
 }
 
 /**********RANDOM BLOCK**********/
+#random{
+    display: flex;
+    flex-wrap: wrap;
+}
+.random-fig{
+    flex-basis: 55%;
+}
 .random-fig img{
-    max-width: 100%;
+    width: 100%;
+    max-width: 811px;
+    max-height: 500px;
     height: auto
+}
+.rand-block-descrp{
+    flex-basis: 40%;
 }
 .random-header h3{
     font: 30px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 42px;
     padding: 20px;
-    text-align: center;
 }
 .random-descrp p{
     font: 16px 'raleway', sans-serif;
@@ -427,11 +461,9 @@ body {
     line-height: 24px;
     padding: 20px;
     text-align: justify;
-    text-align: center;
 }
 .rand-block-descrp ul{
-    margin: 0 20px;
-    padding: 10px;
+    padding: 20px;
 }
 .rand-block-descrp ul li{
     font: 14px 'raleway', sans-serif;
@@ -440,8 +472,8 @@ body {
     line-height: 24px;
 }
 .rand-block-descrp ion-icon{
-    font-size: 25px;
-    font-weight: 800;
+    font: 15px 'raleway', sans-serif;
+    font-weight: 500;
 }
 
 /**********TEAM BLOCK**********/
@@ -449,81 +481,87 @@ body {
     position: relative;
 }
 .team-header{
-    margin: 10px 0;
-    padding: 10px 0;
-    text-align: center;
+    margin: 30px;
+    padding: 20px;
 }
 .team-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .team-header p{
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
-.team-member{
+.team-blocks{
     display: flex;
-    margin: 50px 0;
-    padding: 20px 0;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.team-member{
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .member-socials{
     flex-basis: 10%;
 }
 .member-descrp{
-    text-align: center;
-    flex-basis: 90%;
-    padding: 20px 0;
+    flex-basis: 70%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 .member-socials a{
     display: block;
-    font: 25px 'Montserrat', sans-serif;
+    font: 22px 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 20px;
-    margin: 5px 0 35px 0;
+    margin: 10px 0 30px 0;
     color: #000;
 }
 .team-member img{
     width: 100%;
     height: auto;
+    max-width: 250px;
+    max-height: 300px;
 }
 .team-member h4{
     font: 20px 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 30px;
-    padding: 20px 0;
     margin: 10px 0;
 }
 .team-member p{
     font: 18px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0;
 }
 
 /**********SUBSCRIBE ONE BLOCK**********/
 #subs-one{
     background-color: #3A7BD5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
 }
 .subscribe-para{
-    margin: 10px 0;
-    padding: 30px 0;
-    text-align: center;
+    margin: 20px 20px 0 0;
+    padding: 10px 0;
 }
 .subscribe-para h4{
     font: 30px 'montserrat', sans-serif;
     font-weight: 400;
     line-height: 42px;
-    color: #fff;
+    margin: 30px 0;
 }
 .subscribe-btn{
-    margin: 10px 0;
-    padding: 20px 0;
-    text-align: center;
+    margin: 20px 20px 0 0;
+    padding: 30px 0;
 }
 .subscribe-btn a{
     font: 16px 'montserrat', sans-serif;
@@ -537,7 +575,7 @@ body {
     border-radius: 30px;
     padding: 25px;
 }
-.subscribe-btn button:active{
+.subscribe-btn button:hover{
     background-color: #3A7BD5;
     color: #fff;
     border: 2px solid #fff;
@@ -555,17 +593,16 @@ body {
     margin: 20px 0;
 }
 .project-grid img{
-    max-width: 100px;
-    max-height: 150px;
+    max-width: 300px;
+    max-height: 200px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 .project-dashboard button{
-    font: 22px 'montserrat', sans-serif;
+    font: 25px 'montserrat', sans-serif;
     font-weight: 500;
-    line-height: 22px;
-    text-decoration: underline;
-    padding: 5px 0;
-    margin: 10px 5px;
+    line-height: 24px;
+    padding: 10px;
+    margin: 20px 10px;
     background: none;
     border: none;
     outline: none;
@@ -574,6 +611,7 @@ body {
     float: left;
     width: 33.33%;
     display: none;
+    margin: 5px 0 10px 0;
 }
 .project-row-container:after {
     content: "";
@@ -581,13 +619,13 @@ body {
     clear: both;
 }
 .project-row-container h4{
-    font: 20px 'montserrat', sans-serif;
+    font: 22px 'montserrat', sans-serif;
     font-weight: 500;
     line-height: 24px;
     margin: 10px 0;
 }
 .project-row-container p{
-    font: 18px 'raleway', sans-serif;
+    font: 20px 'raleway', sans-serif;
     font-weight: 500;
     line-height: 24px;
     margin: 10px 0;
@@ -610,42 +648,47 @@ body {
     color: #000;
     padding: 20px 0;
 }
-.counter-list{
-    text-align: center;
-    margin: 10px 0;
+#counters .row{
+    padding: 20px 0;
+    margin: 0 auto;
 }
 .col-2{
-    max-width: 100%;
+    color: #000;
     margin: 0 auto;
-    padding: 20px 30px; 
-}
+    padding: 30px 0;
+}   
 .counter-box ion-icon{
     background-color: #fff;
-    color: #000;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     line-height: 24px;
     border-radius: 50%;
     padding: 20px;
-    margin: 0 10px 10px 0;
+    color: #2187e7;
+    position: absolute;
+    left: 0;
+}
+.counter-box ion-icon:hover{
+    background-color: #3A7BD5;
+    color: #fff;
 }
 .counter{
-    font: 58px 'montserrat', sans-serif;
-    font-weight: 700;
-    line-height: 38px;
-    margin-bottom: 20px;
+    font: 50px 'raleway', sans-serif;
+    font-weight: 800;
+    line-height: 58px;
+    margin: 0 80px;
 }
 .counter-box p{
     font: 18px 'montserrat', sans-serif;
     font-weight: 400;
-    line-height: 24px;
-    padding-top: 10px 0;
+    line-height: 22px;    
+    margin: 15px 0 0 0;
 }
-
 
 /**********TESTIMONIALS BLOCK**********/
 #testimonial{
     position: relative;
+    padding-top: 50px;
     background: url("/images/testimonBg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -655,25 +698,28 @@ body {
     border: 1px solid #fff;
 }
 .testimonial-header{
-    margin: 20px 0;
-    padding: 20px 0;    
+    margin: 10px 0;
+    padding: 10px 0;    
 }
 .testimonial-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .slidee{
     display: none;
 }
 .slide-content {
-    margin: 10px 0;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.client-fig-name{
+    flex-basis: 20%;
 }
 .client-testimonial{
+    flex-basis: 70%;
     margin: 20px 0;   
-    padding: 20px;
-    text-align: center;
 }
 .slidee img{
     width: 100%;
@@ -720,9 +766,9 @@ body {
 }
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 6s;
+    animation-duration: 5s;
   }
   
   @-webkit-keyframes fade {
@@ -736,9 +782,12 @@ body {
   }
 
 /**********FAQSECTION BLOCK**********/
+#faqs{
+    border: 1px solid #fff;
+}
 .faq-header{
-    margin: 20px 0;
-    padding: 20px 0;
+    margin: 30px;
+    padding: 20px;
 }
 .faq-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -749,21 +798,37 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px;
+    padding: 10px 50px;
     text-align: center;
+}
+.faq-lists{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.faq-group-one{
+    flex-basis: 45%;
+}
+.faq-group-two{
+    flex-basis: 45%;
 }
 .collapseBtn {
     font: 16px 'montserrat', sans-serif;
     font-weight: 700;
     line-height: 20px;
+    cursor: pointer;
     border: none;
     text-align: left;
     outline: none;
     margin: 10px 0;
-    padding: 20px;
+    padding: 10px 20px;
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);
+}
+.collapseBtn:hover {
+    background-color: #2187e7;
+    color: #fff;
 }
 .collapseBtn:active{
     outline: none;
@@ -778,26 +843,31 @@ body {
     padding: 5px 10px;
     transition: max-height 0.2s ease-out;
 }
-
+  
 /**********PRCING BLOCK**********/
 #pricing{
     position: relative;
+    padding-top: 50px;
 }
 .pricing-header{
-    margin: 20px 0;
     padding: 20px 0;
 }
 .pricing-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .pricing-header p{
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px;
+    padding: 10px 50px;
     text-align: center;
+}
+.pricing-charts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .chart{
     border: 5px solid #000;
@@ -806,6 +876,9 @@ body {
     border-radius: 10px;
     background-color: #2187e7;
     color: #fff;
+}
+.chart-header{
+    margin-bottom: 10px;
 }
 .chart-benefits li{
     font: 14px 'Raleway', sans-serif;
@@ -840,64 +913,72 @@ body {
     color: #fff;
 }
 .subscribe-pr{
-    padding: 20px;
+    padding: 20px 0;
 }
 .subscribe-pr h4{
-    font: 30px 'montserrat', sans-serif;
+    font: 40px 'montserrat', sans-serif;
     font-weight: 400;
-    line-height: 46px;
+    line-height: 56px;
     margin: 30px 0 20px 0;
 }
 #exampleInputEmail1{
     border: 3px solid #fff;
     border-radius: 20px;
-    padding: 30px 0;
-    margin: 50px 0;
+    padding: 23px;
     background: transparent;
     color: #fff;
     font-family: 'montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
 }
 #exampleInputEmail1:focus{
     border: 3px solid #2187e7;
 }
+.subscribe-form{
+    padding: 50px 0;
+}
 .form-group{
-    text-align: center;
+    display: flex;
+    position: relative;
 }
 .form-group .btn{
     background-color: #2187e7;
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     border-radius: 20px;
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #fff;
-    padding: 20px 10px;
-    margin: 10px 0;
+    padding: 15px 50px;
+    position: absolute;
+    right: 0;
 }
-.form-group .btn:active{
+.form-group .btn:hover{
     background-color: #fff;
     color: #2187e7;
-    border: 5px solid #2187e7;
+    border: 3px solid #2187e7;
 }
 
 /**********BLOGS BLOCK**********/
+.blogs-header{
+    padding-top: 20px;
+}
 .blogs-header h2{
-    font: 30px 'Montserrat', sans-serif;
+    font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 25px 0 10px 0;
+    margin: 20px 0;
 }
 .blogs-header p{
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px 0;
+    margin-bottom: 30px;
+    padding: 10px;
     text-align: center;
 }
 .blog-container{
-    margin: 10px 0;
+    margin-bottom: 20px;
     padding: 10px 0;
 }
 .blog{
@@ -906,7 +987,7 @@ body {
     outline: none;
 }
 .blog p{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .blog-category{
     margin: 15px 10px;
@@ -914,7 +995,7 @@ body {
     font-weight: 400;
     line-height: 24px;
 }
-.blog-category a:active{
+.blog-category a:hover{
     color: #333;
 }
 .blog-upload-details{
@@ -955,17 +1036,14 @@ body {
     color: #fff;
     padding: 15px;
 }
-.blog-read-btn:active{
+.blog-read-btn:hover{
     background-color: #fff;
     color: #2187e7;
     border: 2px solid #2187e7;
 }
-
-
 /**********PARTNERS BLOCK**********/
 .partners-header{
-    margin: 20px 0;
-    padding: 20px 10px;
+    padding-top: 30px;
 }
 .partners-header h2{
     font: 40px 'Montserrat', sans-serif;
@@ -976,42 +1054,47 @@ body {
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .partners-list{
-    padding: 40px 0;
-    padding: 20px 10px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
 }
 .customer-logos img{
     margin: 10px 30px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
-
+.customer-logos img:hover{
+    margin: 10px 30px;
+    opacity: 0.9;
+}
 
 /**********CONTACT BLOCK**********/
 #contact{
     position: relative;
+    padding-top: 50px;
+    background-color: #F2F2F2;
 }
 .contact-header{
-    margin: 20px 0;
-    padding: 20px 10px;
+    margin: 10px 0;
+    padding: 10px 0;
 }
 .contact-header h2{
     font: 40px 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .contact-header p{
     font: 16px 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 10px 50px;
     text-align: center;
 }
 .contact-options{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .contact ion-icon{
     font: 40px 'FontAwesome', sans-serif;
@@ -1031,6 +1114,17 @@ body {
 .contact-form{
     padding: 40px 0;
 }
+.input-sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec-one{
+    flex-basis: 50%;
+}
+.sec-two{
+    flex-basis: 40%;
+}
 .sec-one input, .sec-two textarea{
     margin: 20px 0;
 }
@@ -1043,7 +1137,7 @@ body {
     line-height: 24px;
     border-radius: 20px;
 }
-.form-control:active{
+.form-control:hover{
     border: 2px solid #2187e7;
 }
 .contact-form .btn{
@@ -1056,25 +1150,29 @@ body {
     line-height: 16px;
     color: #fff;
     padding: 20px;
-    margin-top: 30px;
 }
 .contact-form .btn:hover{
     background-color: #fff;
     color: #2187e7;
     border: 2px solid #2187e7;
-    transition: ease-in-out 0.7s;
 }
 
 /**********FOOTER BLOCK**********/
 #footer{
     background-color: #222;
-    padding: 20px 0;
+    padding: 20px;
+}
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
 }
 .foot{
-    margin: 20px 0;
+    flex-basis: 30%;
 }
 .foot .col{
-    margin: 20px;
+    margin: 20px 0;
     font: 20px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 18px;
@@ -1082,28 +1180,24 @@ body {
 .foot a{
     color: #fff;    
 }
-.foot a:active{
+.foot a:hover{
     color: #2187e7;
 }
 .md-section a{
     margin-top: 20px;
 }
 .socials{
-    text-align: center;
-    margin: 20px 0;
+    text-align: end;
+    margin: 10px 0;
 }
 .social-icons ion-icon{
-    margin: 20px 30px;
+    margin: 0 20px;
     font: 25px 'raleway', sans-serif;
     font-weight: 400;
     line-height: 18px;
 }
 .copyright{
     color: #fff;
-    text-align: center;
+    text-align: end;
 }
-
 }
-
-
-/* border: 1px solid red; */
