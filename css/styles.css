@@ -54,7 +54,6 @@ table {
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font: 18px 'Catamaran', sans-serif;
     overflow-x: hidden;
@@ -62,59 +61,71 @@ body{
     position: relative;
     scroll-behavior: smooth;
 }
-
 .full-body{
     border: 1px solid red;
 }
-.main-details{
-    border: 1px solid red;
-}
-.menu-top{
-    border: 1px solid red;
-}
 .navbar-nav{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin: 0 10px 0 0;
 }
 .nav-link{
     color: #fff;
     font: 22px 'Catamaran', sans-serif;
+    line-height: 10px;
     font-weight: 400;
 }
+.loginBtn{
+    color: #fff;
+    background-color: #000;
+    font: 22px 'Catamaran', sans-serif;
+    font-weight: 400;
+    width: 110px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+
+}
 .carousel-item{
-    border: 1px solid red;
     position: relative;
-    margin: 50px 0;
-    padding: 100px 0;
+    margin: 30px 0;
+    padding: 50px 0;
 }
 .item-text{
-    border: 1px solid red;
-    margin: 10px 50px 0 20px;
+    color: #fff;
+    max-height: 500px;
+    margin: 10px 200px;
 }
 .item-text h1{
     font: 70px 'Catamaran', sans-serif;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 75px;
+    margin: 10px 0 20px 0;
+    max-width: 400px;
     display: inline-block;
-    text-align: left;
-    animation: fadeInLeft;
-    animation-duration: 2s;
-    color: #fff;
 }
 .item-text p{
     font: 25px 'Catamaran', sans-serif;
     font-weight: 500;
-    display: inline-block;
-    margin: 50px 0;
-    color: #203056;
-    animation: fadeInLeft;
-    animation-duration: 2s;
-    border: 1px solid red;
+    display: block;
+    max-width: 550px;
+    margin: 10px 0 70px 0;
 }
 .item-text a{
     display: block;
+    margin: 30px 0 0 0;
 }
 .item-text button{
-    background-color: #fff;
+    color: #fff;
+    background-color: #000;
+    font: 22px 'Catamaran', sans-serif;
+    font-weight: 400;
+    width: 170px;
+    height: 70px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
 }
 .slide-img{
     width: 100%;
@@ -125,10 +136,21 @@ body{
     position: absolute;
     top: 50px;
     right: 200px;
+    margin: 50px 0;
     background: none;
+
+ }
+.animatL{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+.animatU{
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+.animatR{
     animation: fadeInRight;
     animation-duration: 2s;
-    border: 1px solid red;
 }
 .context {
     width: 100%;
@@ -141,8 +163,8 @@ body{
     /* font-size: 50px; */
 }
 .main-details{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb);  
+    background: rgb(170,223,215);
+    background: linear-gradient(333deg, rgba(170,223,215,1) 16%, rgba(143,189,227,1) 38%, rgba(141,185,241,1) 46%, rgba(86,135,210,1) 75%, rgba(90,71,237,1) 91%);
     width: 100%;
     height:100vh;   
 }
@@ -162,16 +184,15 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 5);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
+    background: #34495e;
+    animation: animate 10s linear infinite;
+    bottom: -150px;    
 }
 
 .circles li:nth-child(1){
     left: 25%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     animation-delay: 0s;
 }
 
@@ -186,15 +207,15 @@ body{
 
 .circles li:nth-child(3){
     left: 70%;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     animation-delay: 4s;
 }
 
 .circles li:nth-child(4){
     left: 40%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     animation-delay: 0s;
     animation-duration: 18s;
 }
@@ -208,15 +229,15 @@ body{
 
 .circles li:nth-child(6){
     left: 75%;
-    width: 110px;
-    height: 110px;
+    width: 40px;
+    height: 40px;
     animation-delay: 3s;
 }
 
 .circles li:nth-child(7){
     left: 35%;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     animation-delay: 7s;
 }
 
@@ -238,8 +259,8 @@ body{
 
 .circles li:nth-child(10){
     left: 85%;
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
