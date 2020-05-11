@@ -72,12 +72,69 @@ body{
 .menu-top{
     border: 1px solid red;
 }
+.navbar-nav{
+    border: 1px solid red;
+}
+.nav-link{
+    color: #fff;
+    font: 22px 'Catamaran', sans-serif;
+    font-weight: 400;
+}
+.carousel-item{
+    border: 1px solid red;
+    position: relative;
+    margin: 50px 0;
+    padding: 100px 0;
+}
+.item-text{
+    border: 1px solid red;
+    margin: 10px 50px 0 20px;
+}
+.item-text h1{
+    font: 70px 'Catamaran', sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    display: inline-block;
+    text-align: left;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    color: #fff;
+}
+.item-text p{
+    font: 25px 'Catamaran', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin: 50px 0;
+    color: #203056;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    border: 1px solid red;
+}
+.item-text a{
+    display: block;
+}
+.item-text button{
+    background-color: #fff;
+}
+.slide-img{
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    background: none;
+    animation: fadeInRight;
+    animation-duration: 2s;
+    border: 1px solid red;
+}
 .context {
     width: 100%;
     position: absolute;
     border: 1px solid red;
 }
-
 .context h1{
     text-align: center;
     color: #fff;
