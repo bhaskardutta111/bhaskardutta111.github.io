@@ -63,6 +63,28 @@ body{
 }
 .full-body{
     border: 1px solid red;
+    position: relative;
+
+}
+.animatL{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+.animatU{
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+.animatR{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+/**********HEADER*********/
+.main-details{
+    background: rgb(170,223,215);
+    background: linear-gradient(333deg, rgba(170,223,215,1) 16%, rgba(143,189,227,1) 38%, rgba(141,185,241,1) 46%, rgba(86,135,210,1) 75%, rgba(90,71,237,1) 91%);
+    width: 100%;
+    height:100vh;   
 }
 .navbar-nav{
     /* border: 1px solid red; */
@@ -140,34 +162,117 @@ body{
     background: none;
 
  }
-.animatL{
-    animation: fadeInLeft;
-    animation-duration: 2s;
+
+
+/**********ABOUTSEC**********/
+.about-sec{
+    border: 1px solid #000;
+    position: relative;
 }
-.animatU{
-    animation: fadeInUp;
-    animation-duration: 2s;
-}
-.animatR{
-    animation: fadeInRight;
-    animation-duration: 2s;
-}
-.context {
-    width: 100%;
-    position: absolute;
+.about-sec .row{
     border: 1px solid red;
+    margin: 20px 0;
+    padding: 50px 0;
 }
-.context h1{
-    text-align: center;
-    color: #fff;
-    /* font-size: 50px; */
+
+.aboutUsLabel h1{
+    font: 70px 'Catamaran', sans-serif;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 10px 0 20px 0;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    animation:
+    typing 4.5s infinite,
+    blink-caret .5s step-end infinite;
 }
-.main-details{
-    background: rgb(170,223,215);
-    background: linear-gradient(333deg, rgba(170,223,215,1) 16%, rgba(143,189,227,1) 38%, rgba(141,185,241,1) 46%, rgba(86,135,210,1) 75%, rgba(90,71,237,1) 91%);
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+.aboutUsDesc p{
+    font: 25px 'Catamaran', sans-serif;
+    font-weight: 500;
+    line-height: 55px;
+    display: block;
+    max-width: 550px;
+    margin: 20px 0 10px 0;
+
+}
+.aboutUs-img{
     width: 100%;
-    height:100vh;   
+    height: auto;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 10px;
+    margin: 50px 0 0 40px; 
 }
+
+
+/**********SERVICESSEC**********/
+
+.services-sec{
+    border: 1px solid #000;
+    position: relative;
+    background: linear-gradient(323deg, #1a3255, #0b88e4);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBgAnim 5s ease infinite;
+    -moz-animation: gradientBgAnim 5s ease infinite;
+    animation: gradientBgAnim 5s ease infinite;
+}
+@-webkit-keyframes gradientBgAnim {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@-moz-keyframes gradientBgAnim {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@keyframes gradientBgAnim {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+.service{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+}
+.service img{
+    width: 200px;
+    height: 200px;
+}
+.service h3{
+    font: 35px 'Catamaran', sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 30px 0 20px 0;
+}
+.service p{
+    font: 22px 'Catamaran', sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    display: block;
+    
+}
+.circ-two, .circ-four{
+    margin: 250px 0 0px 0;
+}
+
+/**********HEADERANIMATION**********/
 
 .circles{
     position: absolute;
